@@ -1,11 +1,42 @@
 import React from "react";
 import "./About.css";
 import Spiderman from "../../../assets/Images/Characters/spiderman.png"
+import FOGS from "vanta/dist/vanta.fog.min"
+import * as THREE from "three"
 
 export default function AboutSection() {
+    const [vantaEffect, setVantaEffect] = React.useState(null)
+    const vantaRef = React.useRef(null)
+
+    React.useEffect(() => {
+      if (!vantaEffect) {
+        setVantaEffect(
+          FOGS({
+            el: "#homevant",
+            THREE: THREE,
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.0,
+            minWidth: 200.0,
+            scale: 1.0,
+            scaleMobile: 1.0,
+            color: 0x0d0d3d, // Dark blue base color
+            highlightColor: 0xff007f, // Neon pink highlight
+            midtoneColor: 0x6a0dad, // Violet midtone
+            backgroundColor: 0x00001a, // Very dark blue background
+            speed: 1.2, // Slightly increased speed for a dynamic feel
+          })
+        );
+      }
+  
+      return () => {
+        if (vantaEffect) vantaEffect.destroy();
+      };
+    }, [vantaEffect]);
     return (
-        <div className="home-about">
-            <div className="home-about-background"></div>
+        <div className="home-about" id="homevant">
+            <div className="home-about-background" ></div>
             <div className="home-about-title">
                 ABOUT
                 TECHNOVATE

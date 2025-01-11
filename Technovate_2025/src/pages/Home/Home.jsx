@@ -6,15 +6,17 @@ import Gallery from "../../components/Home/Gallery/Gallery"
 import ContactUs from "../../components/ContactUs/ContactUs"
 import LastSection from "../../components/Home/LastSection/LastSection"
 
+
 export default function Home(){
+
     return(
-        <>
+        <div>
         <HeroSection/>
         <VideoSection/>
         <AboutSection/>
         <Gallery/>
         <LastSection/>
         <ContactUs/>
-        </>
+        </div>
     )
 }
