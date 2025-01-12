@@ -50,7 +50,7 @@ export default function VideoSection() {
     if (section && gif) {
       // GSAP ScrollTrigger animation for full-page scaling
       gsap.to(gif, {
-        scale: 3, // Scale the GIF to 3x its original size
+        scale: 2, // Scale the GIF to 3x its original size
         duration: 1,
         ease: "power1.out",
         scrollTrigger: {

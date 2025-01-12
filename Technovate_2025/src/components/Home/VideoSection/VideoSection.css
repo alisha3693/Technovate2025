@@ -24,7 +24,7 @@
   }
   
   .arcade-gif {
-    width: 100%;
+    width: 90%;
     height: auto;
     transform-origin: center; /* Scale from the center */
   }

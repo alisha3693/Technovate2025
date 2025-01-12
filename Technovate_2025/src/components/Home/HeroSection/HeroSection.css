@@ -2,7 +2,7 @@
   position: relative;
   background: url('../../../assets/Images/Bg/home_bg.png') no-repeat center center;
   background-size: cover;
-  height: 110svh;
+  height: 100svh;
   width: 100%;
   background-attachment: fixed;
 }
@@ -46,6 +46,8 @@
   font-size: 20px;
 }
 
+
+
 @media (max-width: 720px) {
   .hero-section-text-box {
     right: 10px;
@@ -67,4 +69,30 @@
     font-size: 15px;
   }
 }
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  right: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+  cursor: pointer;
+  color:rgb(0, 149, 255)
+}
+
+.scroll-indicator svg {
+  width: 30px;
+  height: 30px;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
 
