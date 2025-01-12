@@ -1,0 +1,21 @@
+{
+	"env": {
+		"node": true
+	},
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true,
+			"modules": true,
+			"experimentalObjectRestSpread": true
+		}
+	},
+	"settings": {
+		"react": {
+			"pragma": "React",
+			"version": "15.6.1"
+		}
+	}
+}

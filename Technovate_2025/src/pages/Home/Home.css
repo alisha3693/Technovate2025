@@ -1,0 +1,16 @@
+/* Target NProgress bar with high specificity */
+#nprogress > .bar {
+    background: linear-gradient(90deg, #ff007f, #007fff); /* Cool gradient */
+    height: 8px !important; /* Force height */
+  }
+  
+  /* Ensure the glowing effect scales with the bar */
+  #nprogress > .peg {
+    box-shadow: 0 0 15px #ff007f, 0 0 10px #007fff;
+    height: 8px; /* Match the bar height */
+  }
+  
+  #nprogress .spinner {
+    display: none !important; /* Hide spinner completely */
+  }
+  

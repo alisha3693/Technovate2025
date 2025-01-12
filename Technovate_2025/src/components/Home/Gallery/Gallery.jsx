@@ -3,7 +3,12 @@ import "./Gallery.css";
 import img1 from "../../../assets/Images/Gallery/img1.png";
 import img2 from "../../../assets/Images/Gallery/img2.png";
 import img3 from "../../../assets/Images/Gallery/img3.png";
-import gif from "../../../assets/Videos/landing_page.mp4";
+import img4 from "../../../assets/Images/Gallery/img4.webp";
+import img5 from "../../../assets/Images/Gallery/img5.png";
+import img6 from "../../../assets/Images/Gallery/img6.png";
+import img7 from "../../../assets/Images/Gallery/img7.png";
+import img8 from "../../../assets/Images/Gallery/img8.png";
+
 import FOGS from "vanta/dist/vanta.fog.min";
 import * as THREE from "three";
 
@@ -43,11 +48,11 @@ const GalleryCarousel = () => {
     { id: 1, image: img1},
     { id: 2, image: img2 },
     { id: 3, image: img3 },
-    { id: 4, image: img1 },
-    { id: 5, image: img2 },
-    { id: 6, image: img2 },
-    { id: 7, image: img2 },
-    { id: 8, image: img2 },
+    { id: 4, image: img4 },
+    { id: 5, image: img5 },
+    { id: 6, image: img6 },
+    { id: 7, image: img7 },
+    { id: 8, image: img8 },
   ];
 
   useEffect(() => {
