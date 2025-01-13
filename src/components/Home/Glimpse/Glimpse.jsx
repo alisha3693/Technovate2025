@@ -17,14 +17,11 @@ export default function Glimpse() {
               autoPlay
               loop
               muted
-              playsInline
-              controls
               className="background-video"
             >
               <source src={video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-
           </div>
         </div>
       </div>

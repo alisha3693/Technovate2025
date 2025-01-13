@@ -18,6 +18,19 @@
   animation: fadeIn 2s ease-out;
 }
 
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: brightness(50%) contrast(1.2);
+}
+
+/* Schedule Content */
 .schedule-content {
   position: absolute;
   width: 90%;
@@ -29,6 +42,7 @@
   padding: 10%;
 }
 
+/* Schedule Header */
 .schedule-header {
   margin-bottom: 20px;
   animation: fadeIn 3s ease-out;
@@ -46,11 +60,7 @@
 
 /* Schedule title with responsive scaling */
 .schedule-title {
-  font-size: clamp(
-    2rem,
-    8vw,
-    5rem
-  ); /* Scale text size between 2rem and 5rem based on viewport width */
+  font-size: clamp(2rem, 8vw, 5rem);
   font-family: "MyCustomFont", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -82,7 +92,7 @@
 }
 
 .day {
-  font-size: clamp(1rem, 3vw, 1.5rem); /* Scale day button text size */
+  font-size: clamp(1rem, 3vw, 1.5rem);
   font-weight: bold;
   padding: 10px 20px;
   cursor: pointer;
@@ -98,15 +108,29 @@
 
 .day:hover {
   background: rgba(255, 255, 255, 0.8);
-  color: #000;
+  color: #f83f3f;
   transform: scale(1.1);
+  animation: pulseButton 0.5s ease-in-out; /* Pulse effect */
 }
 
 .day.active {
-  background: rgba(199, 38, 38, 0.9);
-  color: rgb(255, 248, 248);
+  background: #ff5733;
+  color: white;
   border: 2px solid white;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Button pulse effect */
+@keyframes pulseButton {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* Table Row Fade-in Animation */
@@ -121,6 +145,7 @@
   }
 }
 
+/* Schedule Table */
 .schedule-table {
   width: 80%;
   margin: 30px auto;
@@ -130,8 +155,8 @@
   padding: 20px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  background: url("https://www.transparenttextures.com/patterns/triangle.png"),
-    rgba(255, 0, 0, 0.2);
+  background: url("https://www.transparenttextures.com/patterns/triangles.png"),
+    rgba(0, 0, 0, 0);
   background-size: cover;
   animation: fadeIn 3s ease-out;
 }
@@ -151,17 +176,22 @@
 .table-header {
   font-weight: bold;
   color: white;
-  font-size: clamp(1rem, 2.5vw, 1.4rem); /* Scale table header text size */
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
   text-align: center;
   border-bottom: 2px solid rgba(255, 255, 255, 0.6);
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
+/* Table row with responsive font size */
 .table-row {
   color: white;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
   text-align: center;
-  background: linear-gradient(90deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.5),
+    rgba(219, 125, 125, 0.7)
+  );
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   position: relative;
@@ -180,29 +210,69 @@
   animation-delay: 1.5s;
 }
 
+/* Hover effect and line styling */
 .table-row:before {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
-  width: 10px;
-  background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0));
-  box-shadow: 2px 0px 10px rgba(255, 255, 255, 0.5);
+  width: 5px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 123, 255, 0.8),
+    rgba(0, 123, 255, 0)
+  );
+  box-shadow: 2px 0px 15px rgba(0, 123, 255, 0.4);
+  border-radius: 5px;
+}
+
+.table-row:hover:before {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 123, 255, 1),
+    rgba(0, 123, 255, 0)
+  );
+  box-shadow: 2px 0px 25px rgba(0, 123, 255, 0.6);
 }
 
 .table-row:hover {
-  background: rgba(255, 0, 0, 0.7);
-  transform: scale(1.01);
+  background: rgba(255, 0, 0, 0.596);
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Responsive scaling for the table row text */
 .table-row span {
   font-family: "Orbitron", sans-serif;
-  font-size: clamp(1rem, 3vw, 1.2rem); /* Scale text in table rows */
+  font-size: clamp(1rem, 3vw, 1.2rem);
 }
 
+/* Table header font */
 .table-header span {
   font-family: "Orbitron", sans-serif;
-  font-size: clamp(1.2rem, 3vw, 1.4rem); /* Scale header text */
+  font-size: clamp(1.2rem, 3vw, 1.4rem);
+}
+
+/* Loading spinner */
+.loading-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
