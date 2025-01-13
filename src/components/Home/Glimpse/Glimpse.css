@@ -1,0 +1,131 @@
+/* Overall container */
+.glimpse {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    /* background-color:black; */
+    font-family: technovate;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgb(4, 10, 30);
+
+  }
+  
+  /* Content wrapper */
+  .glimpse-box {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* GTA character section */
+  .gta-character {
+    width: 40%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .gta-character .watermark {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain; 
+  }
+  
+  .glimpse-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 1;
+    position: relative;
+    pointer-events: auto;
+    font-family: technovate;
+    text-shadow: 0px 0px 8px #ff007f;
+  }
+  
+  /* .glimpse-text:hover + .watermark,
+  .gta-character:hover .watermark {
+    opacity: 0.4;
+    transform: translate(-50%, -50%) scale(1.1);
+  } */
+  
+  /* Video container */
+  .video-box {
+    width: 55%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .video-box .video {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    max-height: 450px;
+  }
+  
+  .background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 1030px) {
+    .glimpse-box {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+  
+    .gta-character {
+      width: 100%;
+      margin: 0;
+      order: 2;
+    }
+  
+    .video-box {
+      width: 100%;
+      max-width: 700px;
+      padding: 0;
+    }
+  
+    .gta-character .watermark {
+      max-height: 300px;
+    }
+  
+    .glimpse-text {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .glimpse-text {
+      font-size: 1.5rem;
+    }
+  
+    .video-box {
+     padding: 0;
+    }
+  
+    .gta-character .watermark {
+      max-height: 200px;
+    }
+  }
+  

@@ -1,0 +1,208 @@
+/* General Fade-in Animation for the whole container */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.schedule-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  animation: fadeIn 2s ease-out;
+}
+
+.schedule-content {
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  padding: 10%;
+}
+
+.schedule-header {
+  margin-bottom: 20px;
+  animation: fadeIn 3s ease-out;
+}
+
+/* Pulse animation for the title */
+@keyframes pulse {
+  0% {
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  }
+  100% {
+    text-shadow: 0px 10px 15px rgba(0, 0, 0, 0.8);
+  }
+}
+
+/* Schedule title with responsive scaling */
+.schedule-title {
+  font-size: clamp(
+    2rem,
+    8vw,
+    5rem
+  ); /* Scale text size between 2rem and 5rem based on viewport width */
+  font-family: "MyCustomFont", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 20px 0;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  text-stroke: 2px white;
+  animation: pulse 2s infinite alternate;
+}
+
+/* Day buttons animation */
+@keyframes dayButtonFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.days-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.day {
+  font-size: clamp(1rem, 3vw, 1.5rem); /* Scale day button text size */
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: rgba(255, 154, 154, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: dayButtonFadeIn 1.5s ease-out forwards;
+}
+
+.day:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+  transform: scale(1.1);
+}
+
+.day.active {
+  background: rgba(199, 38, 38, 0.9);
+  color: rgb(255, 248, 248);
+  border: 2px solid white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Table Row Fade-in Animation */
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.schedule-table {
+  width: 80%;
+  margin: 30px auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: url("https://www.transparenttextures.com/patterns/triangle.png"),
+    rgba(255, 0, 0, 0.2);
+  background-size: cover;
+  animation: fadeIn 3s ease-out;
+}
+
+.table-header,
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  padding: 15px 10px;
+  align-items: center;
+  opacity: 0;
+  animation: slideUp 1s ease-out forwards;
+}
+
+/* Table header with responsive font size */
+.table-header {
+  font-weight: bold;
+  color: white;
+  font-size: clamp(1rem, 2.5vw, 1.4rem); /* Scale table header text size */
+  text-align: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.table-row {
+  color: white;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  animation: slideUp 1s ease-out forwards;
+}
+
+.table-row:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.table-row:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.table-row:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+.table-row:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0));
+  box-shadow: 2px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.table-row:hover {
+  background: rgba(255, 0, 0, 0.7);
+  transform: scale(1.01);
+}
+
+/* Responsive scaling for the table row text */
+.table-row span {
+  font-family: "Orbitron", sans-serif;
+  font-size: clamp(1rem, 3vw, 1.2rem); /* Scale text in table rows */
+}
+
+.table-header span {
+  font-family: "Orbitron", sans-serif;
+  font-size: clamp(1.2rem, 3vw, 1.4rem); /* Scale header text */
+}

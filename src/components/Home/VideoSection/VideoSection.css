@@ -1,0 +1,34 @@
+.video-section-home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 10;
+  }
+  
+  .video-section-home {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent content overflow */
+  }
+  
+  .arcade-gif-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .arcade-gif {
+    width: 90%;
+    height: auto;
+    transform-origin: center; /* Scale from the center */
+  }
+  
+
+  
+  
