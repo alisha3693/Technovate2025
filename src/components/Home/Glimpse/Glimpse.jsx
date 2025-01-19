@@ -17,7 +17,7 @@ export default function Glimpse() {
               autoPlay
               loop
               muted
-              className="background-video"
+              className="background-video-glimpse"
             >
               <source src={video} type="video/mp4" />
               Your browser does not support the video tag.
