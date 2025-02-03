@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import { Divider } from '@mui/material';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Navbar.css'; // Import the CSS file
 
@@ -41,6 +40,17 @@ export default function NavBar() {
     navigate('/schedule');
     handleMenuClose();
   };
+
+  const handleSponsorClick = () => {
+    navigate('/sponsors');
+    handleMenuClose();
+  }
+
+  
+  const handleEventClick = () => {
+    navigate('/events');
+    handleMenuClose();
+  }
 
   const handleHomeClick = () => {
     navigate('/');
@@ -106,13 +116,13 @@ export default function NavBar() {
             <MenuItem onClick={handleHomeClick} sx={navMenuStyle}>
               Home
             </MenuItem>
-            <MenuItem onClick={handleMenuClose} sx={navMenuStyle}>
+            <MenuItem onClick={handleEventClick} sx={navMenuStyle}>
               Events
             </MenuItem>
             <MenuItem onClick={handleMenuClose} sx={navMenuStyle}>
               Team
             </MenuItem>
-            <MenuItem onClick={handleMenuClose} sx={navMenuStyle}>
+            <MenuItem onClick={handleSponsorClick} sx={navMenuStyle}>
               Sponsor
             </MenuItem>
             <MenuItem onClick={handleScheduleClick} sx={navMenuStyle}>

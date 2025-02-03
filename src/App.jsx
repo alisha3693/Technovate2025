@@ -1,9 +1,11 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import NavBar from "./components/Navbar/Navbar";
-import Home from "./pages/Home/Home";
 import AudioPlayer from "./components/AudioPlayer/AudioPlayer";
+import NavBar from "./components/Navbar/Navbar";
 import Schedule from "./components/Schedule/Schedule";
+import Sponsors from "./components/Sponsors/Sponsors";
+import Events from "./components/Home/Events/events"
+import Home from "./pages/Home/Home";
 
 // Define routes for your application
 const router = createBrowserRouter([
@@ -25,6 +27,26 @@ const router = createBrowserRouter([
                 <AudioPlayer />
                 <Schedule />
             </>),
+    },
+    {
+        path: '/Sponsors',
+        element: (
+            <>
+                <AudioPlayer />
+                <Sponsors />
+            </>
+        ),
+    },
+
+    {
+        path: '/events',
+        element: (
+            <>
+            <NavBar />
+                <AudioPlayer />
+                <Events />
+            </>
+        ),
     }
 ]);
 
