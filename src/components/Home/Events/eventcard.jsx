@@ -1,6 +1,6 @@
 import React from "react"
 import './eventcard.css'
-import texture from '../../../assets/images/Texture/glass texture.png'
+
 
 export default function EventCard({image_link , title_text , onClick}){
 
