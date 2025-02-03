@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('../../../assets/images/Bg/valobg.jpg');
+    background-image: url('../../../assets/Images/Bg/valobg.jpg');
     background-size: cover; /* Ensures the background image covers the entire container */
     background-position: center;
 }
