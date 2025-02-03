@@ -46,6 +46,12 @@ export default function NavBar() {
     handleMenuClose();
   }
 
+  
+  const handleEventClick = () => {
+    navigate('/events');
+    handleMenuClose();
+  }
+
   const handleHomeClick = () => {
     navigate('/');
     handleMenuClose();
@@ -110,7 +116,7 @@ export default function NavBar() {
             <MenuItem onClick={handleHomeClick} sx={navMenuStyle}>
               Home
             </MenuItem>
-            <MenuItem onClick={handleMenuClose} sx={navMenuStyle}>
+            <MenuItem onClick={handleEventClick} sx={navMenuStyle}>
               Events
             </MenuItem>
             <MenuItem onClick={handleMenuClose} sx={navMenuStyle}>

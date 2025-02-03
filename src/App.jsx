@@ -4,6 +4,7 @@ import AudioPlayer from "./components/AudioPlayer/AudioPlayer";
 import NavBar from "./components/Navbar/Navbar";
 import Schedule from "./components/Schedule/Schedule";
 import Sponsors from "./components/Sponsors/Sponsors";
+import Events from "./components/Home/Events/events"
 import Home from "./pages/Home/Home";
 
 // Define routes for your application
@@ -36,6 +37,17 @@ const router = createBrowserRouter([
             </>
         ),
     },
+
+    {
+        path: '/events',
+        element: (
+            <>
+            <NavBar />
+                <AudioPlayer />
+                <Events />
+            </>
+        ),
+    }
 ]);
 
 export default function App() {

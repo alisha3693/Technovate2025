@@ -3,6 +3,11 @@
     src: url('./assets/Fonts/Aldrich-Regular.ttf');
 }
 
+
+@font-face {
+  font-family: demo;
+  src: url('./assets/Fonts/CounterStreamDemoRegular.ttf');
+}
 body{
     margin: 0;
     border: 0;
