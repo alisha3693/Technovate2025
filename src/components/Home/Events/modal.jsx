@@ -17,7 +17,7 @@ const style = {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  backgroundImage: "url('../../../assets/images/Texture/glass texture.png')",
+//   backgroundImage: "url('../../../assets/images/Texture/glass texture.png')",
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   boxShadow: 24,
