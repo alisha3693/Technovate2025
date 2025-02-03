@@ -8,6 +8,8 @@ import ContactUs from "../../components/ContactUs/ContactUs";
 import LastSection from "../../components/Home/LastSection/LastSection";
 import Glimpse from "../../components/Home/Glimpse/Glimpse";
 import AudioPlayer from "../../components/AudioPlayer/AudioPlayer";
+import Events from "../../components/Home/Events/events";
+import EventText from '../../components/Home/Events/event_text'
 
 export default function Home() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -50,6 +52,8 @@ export default function Home() {
       <HeroSection />
       <VideoSection />
       <AboutSection />
+      <Events/>
+      {/* <EventText/> */}
       <Gallery />
       <Glimpse />
       <LastSection />

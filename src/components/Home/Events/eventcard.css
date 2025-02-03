@@ -1,0 +1,59 @@
+
+
+.main-div{
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    justify-content: center;
+    background-image: url('../../../assets/images/Texture/glass texture.png');
+    background-color:rgba(141, 33, 49, 0.81) ;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  color: white; /* Ensure text is visible */
+  padding: 10px;
+  font-family:demo;
+  backdrop-filter: blur(13px); 
+    width:30%;
+    height: 70%;
+    opacity:0.9;
+}
+
+.main-div:hover{
+    background-color:rgba(161, 105, 233, 0.81) ;
+    cursor:pointer;
+}
+
+
+
+.inside-div{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    margin: none;
+    align-items: center;
+    height:90%;
+    width:90%;
+
+}
+
+.image-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:100%;
+}
+
+.image-div img {
+    width:75%;
+    height:100%;
+}
+
+.text-div > p{
+    margin-top:90px;
+    display: flex;
+    font-family: 'CounterStreamDemoRegular';
+    font-size: 4vh;
+}
+
