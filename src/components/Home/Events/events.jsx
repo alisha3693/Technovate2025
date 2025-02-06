@@ -24,7 +24,7 @@ export default function Events() {
   };
 
   return (
-    <div>
+    
     <div className="top-main">
       <div className="main-center">
         <div className="first-row">
@@ -45,8 +45,7 @@ export default function Events() {
       
     </div>
 
-    <div><ContactUs/></div>
-    </div>
+  
 
   );
 }

@@ -6,6 +6,7 @@ import Schedule from "./components/Schedule/Schedule";
 import Sponsors from "./components/Sponsors/Sponsors";
 import Events from "./components/Home/Events/events"
 import Home from "./pages/Home/Home";
+import ContactUs from "./components/ContactUs/ContactUs";
 
 // Define routes for your application
 const router = createBrowserRouter([
@@ -45,6 +46,7 @@ const router = createBrowserRouter([
             <NavBar />
                 <AudioPlayer />
                 <Events />
+                <ContactUs/>
             </>
         ),
     }
