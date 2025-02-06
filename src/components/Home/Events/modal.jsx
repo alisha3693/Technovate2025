@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Modal.css"; // You can create your own styles here
+import "./modal.css"; // You can create your own styles here
 
 const EventModal = ({title , modal_text, setIsOpen}) => {
 
