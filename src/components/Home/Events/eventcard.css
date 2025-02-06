@@ -50,10 +50,31 @@
     height:100%;
 }
 
+
+
 .text-div > p{
     margin-top:90px;
     display: flex;
     font-family: 'CounterStreamDemoRegular';
     font-size: 4vh;
+   
 }
 
+
+
+@media only screen and (max-width: 600px) {
+
+
+    .main-div{
+        width:70%;
+        margin-top:0px;
+        margin:20px;
+        
+    }
+
+
+    .text-div >p {
+        margin-top:10px;
+    }
+
+} 

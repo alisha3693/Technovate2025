@@ -29,6 +29,12 @@
     transform-origin: center; /* Scale from the center */
   }
   
+  @media only screen and (max-width: 600px) {
+    
+    .video-section-home{
+      display: none;
+    }
+}
 
   
   
