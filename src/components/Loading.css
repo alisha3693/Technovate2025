@@ -1,0 +1,21 @@
+
+.loading-container {
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+}
+
+.loading-image {
+    height: 6rem; 
+    width: 6rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.object-cover {
+    object-fit: cover;
+}
