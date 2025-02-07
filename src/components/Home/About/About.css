@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     overflow: hidden; 
-    margin-top: -10%; 
+    margin-top: 0; 
     z-index: 10;
     height: auto; 
     padding-bottom: 50px; 
