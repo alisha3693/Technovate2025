@@ -84,6 +84,8 @@
     .first-row{
 
         flex-direction: column;
+        margin:5px;
+        margin-bottom: 10px;
         
     }
 
@@ -91,5 +93,6 @@
     .second-row{
         flex-direction:column;
         margin-top:40px;
+        margin: 5px;
     }
 }
