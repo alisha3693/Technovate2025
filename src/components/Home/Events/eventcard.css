@@ -12,7 +12,7 @@
   background-position: center;
   color: white; /* Ensure text is visible */
   padding: 10px;
-  font-family:demo;
+  font-family:CounterStreamDemoRegular;
   backdrop-filter: blur(13px); 
     width:30%;
     height: 70%;
@@ -55,7 +55,7 @@
 .text-div > p{
     margin-top:90px;
     display: flex;
-    font-family: 'CounterStreamDemoRegular';
+    font-family: CounterStreamDemoRegular;
     font-size: 4vh;
    
 }
@@ -68,13 +68,14 @@
     .main-div{
         width:70%;
         margin-top:0px;
-        margin:20px;
+        margin:10px;
         
     }
 
 
     .text-div >p {
         margin-top:10px;
+        font-size: 2vh;
     }
 
 } 

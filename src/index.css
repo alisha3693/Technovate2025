@@ -5,7 +5,8 @@
 
 
 @font-face {
-  font-family: demo;
+  font-family: CounterStreamDemoRegular;
+
   src: url('./assets/Fonts/CounterStreamDemoRegular.ttf');
 }
 body{
