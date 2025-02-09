@@ -45,9 +45,7 @@ export default function AboutSection() {
                 <img src={Spiderman}/>
             </span>
             <div className="home-about-text">
-            Technovate at IIIT-NR is an annual convergence of technology and culture, encompassing coding competitions, hacking contests, battle of bands, and keynote sessions by innovation experts. Spanning three dynamic days, it provides a platform for inventive thinking, spotlighting ingenious ideas and cultural talents. Attendees can engage in collaborative learning, network with like-minded individuals, and explore cutting-edge technologies. 
-
-Technovate continues to evolve as a significant platform where technology and culture converge harmoniously.
+            Ah 💥, here we go again!" Technovate 6.0 is back, bigger and bolder than ever! As the annual techno-cultural fest of IIIT-Naya Raipur, Technovate has evolved into a grand spectacle, and this 6th edition is set to be nothing short of legendary. With an expected footfall of over 7,000 enthusiastic attendees, the fest brings together four electrifying tracks—Technical, Cultural, Sports, and the show-stopping Pro Night! But wait, there’s more—step into the vibrant world of ComicExpo, feast on various delicious food stalls, and immerse yourself in a festival where innovation meets celebration. “It’s time to stop being losers and get with the winners!” Get ready to experience the thrill, the energy, and the madness of Technovate 6.0! 🚀🎉
             </div>
         </div>
     );
