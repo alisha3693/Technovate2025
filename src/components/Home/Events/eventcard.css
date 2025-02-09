@@ -12,7 +12,7 @@
   background-position: center;
   color: white; /* Ensure text is visible */
   padding: 10px;
-  font-family:demo;
+  font-family:CounterStreamDemoRegular;
   backdrop-filter: blur(13px); 
     width:30%;
     height: 70%;
@@ -46,14 +46,36 @@
 }
 
 .image-div img {
-    width:75%;
+    width:100%;
     height:100%;
 }
+
+
 
 .text-div > p{
     margin-top:90px;
     display: flex;
-    font-family: 'CounterStreamDemoRegular';
+    font-family: CounterStreamDemoRegular;
     font-size: 4vh;
+   
 }
 
+
+
+@media only screen and (max-width: 600px) {
+
+
+    .main-div{
+        width:70%;
+        margin-top:0px;
+        margin:10px;
+        
+    }
+
+
+    .text-div >p {
+        margin-top:10px;
+        font-size: 2vh;
+    }
+
+} 

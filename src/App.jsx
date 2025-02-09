@@ -1,4 +1,5 @@
 import React from "react";
+import {useEffect , useState} from "react"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AudioPlayer from "./components/AudioPlayer/AudioPlayer";
 import NavBar from "./components/Navbar/Navbar";
@@ -6,6 +7,8 @@ import Schedule from "./components/Schedule/Schedule";
 import Sponsors from "./components/Sponsors/Sponsors";
 import Events from "./components/Home/Events/events"
 import Home from "./pages/Home/Home";
+import ContactUs from "./components/ContactUs/ContactUs";
+import Loading from "./components/loadingpage"
 
 // Define routes for your application
 const router = createBrowserRouter([
@@ -45,14 +48,33 @@ const router = createBrowserRouter([
             <NavBar />
                 <AudioPlayer />
                 <Events />
+                <ContactUs/>
             </>
         ),
     }
 ]);
 
 export default function App() {
+
+    const [loading , setLoading] = useState(true);
+
+    useEffect(()=>{
+
+        const timer = setTimeout(()=>{
+            setLoading(false);
+        }, 5000)
+
+        return()=> clearTimeout(timer);
+    })
+
+
     return (
-        <RouterProvider router={router}>
-        </RouterProvider>
+        <>
+
+        {loading ? (<Loading /> ): 
+        (<RouterProvider router={router}>
+        </RouterProvider>)
+        }
+        </>
     );
 }
