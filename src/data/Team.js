@@ -1,36 +1,79 @@
+import priyadarshi from "../assets/Team/Website/priyadarshi.jpg"
+import yashJoshi from "../assets/Team/Website/yashjoshi.jpg"
+
+//sponsorship
+import aayushKulkarni from "../assets/Team/Sponsorship/aayushkulkarni.jpg"
+
+//Cultural 
+import soumyaDubey from "../assets/Team/Cultural/soumyadubey.jpg"
+import divyaKumarBanjare from "../assets/Team/Cultural/divyakumarbanjare.png"
+
 const teamData = [
     {
-      groupName: "Overall Coordinators",
+      groupName: "Website",
       heads:[
         {
-          name:"PD",
-          image:"path/to/img",
+          name:"Priyadarshi Satyakam",
+          image:priyadarshi,
+        },
+        {
+          name:"Yash Mohan Joshi",
+          image:yashJoshi,
         }
       ],
       members: [
         {
-          name: "John Doe",
-          image: "path/to/image1.jpg"
+          name:"Priyadarshi Satyakam",
+          image:priyadarshi,
         },
         {
-          name: "Jane Smith",
-          image: "path/to/image2.jpg"
+          name:"Yash Mohan Joshi",
+          image:yashJoshi,
         }
       ]
     },
     {
       groupName: "Sponsorship",
-      members: [
+      heads:[
         {
-          name: "Alex Johnson",
-          image: "path/to/image3.jpg"
+          name: "Aayush Kulkarni",
+          image: aayushKulkarni
         },
         {
-          name: "Emily Davis",
+          name:"Yash Mohan Joshi",
+          image:yashJoshi,
+        }
+      ],
+      members: [
+        {
+          name: "Aayush Kulkarni",
+          image: aayushKulkarni
+        },
+        {
+          name: "",
           image: "path/to/image4.jpg"
         }
       ]
-    }
+    },
+    {
+      groupName: "Cultural",
+      heads:[
+        {
+          name: "Soumya Dubey",
+          image: soumyaDubey
+        },
+        {
+          name:"Divya Kumar Banjare",
+          image:divyaKumarBanjare,
+        }
+      ],
+      members: [
+        {
+          name: "",
+          image: "path/to/image4.jpg"
+        }
+      ]
+    },
   ];
   
   export default teamData;

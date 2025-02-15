@@ -7,17 +7,19 @@ export default function TeamSection() {
     <div className="team-component">
       <div className="team-container">
         {teamData.map((group, index) => (
-          <div key={index} className="team-group"> 
+          <div key={index} className="team-group" id={`${group.groupName}`}> 
             <h2 className="group-name">{group.groupName}</h2>
 
             {/* Display Heads if present */}
-            {group.heads && group.heads.length > 0 && (
+            {group.heads && (
               <div className="row" style={{marginBottom:"20px"}}>
                 {group.heads.map((head, headIndex) => (
-                  <div key={headIndex} className="box">
+                  <div key={headIndex} style={{display:"flex", alignItems:"center", justifyContent:"center", flexDirection:"column"}}>
+                  <div  className="box">
                     <img src={head.image} alt={head.name} className="box-image" />
-                    <div className="box-name">{head.name}</div>
                   </div>
+                   <div className="box-name">{head.name}</div>
+                   </div>
                 ))}
               </div>
             )}
@@ -25,10 +27,12 @@ export default function TeamSection() {
             {/* Display Members */}
             <div className="row">
               {group.members.map((member, memberIndex) => (
+                <div style={{display:"flex", alignItems:"center", justifyContent:"center", flexDirection:"column"}}>
                 <div key={memberIndex} className="box">
                   <img src={member.image} alt={member.name} className="box-image" />
-                  <div className="box-name">{member.name}</div>
                 </div>
+                  <div className="box-name">{member.name}</div>
+                  </div>
               ))}
             </div>
           </div>

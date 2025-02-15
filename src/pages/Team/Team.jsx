@@ -8,7 +8,7 @@ import TeamSection from "../../components/Team/TeamSection";
 export default function Team() {
   return (
     <div className="team-page">
-      <img src={BG} alt="Background" />
+      <img src={BG} alt="Background" className="team-page-img"/>
       <ResponsiveDrawer/>
       <div className="team-content">
         <TeamSection/>

@@ -65,29 +65,31 @@ function ResponsiveDrawer(props) {
       <List>
         {teams.map((text) => (
           <ListItem key={text} disablePadding>
-            <ListItemButton
-              sx={{
-                margin: '10px',
-                borderRadius: '8px',
-                background: 'rgba(0, 50, 100, 0.4)',
-                backdropFilter: 'blur(15px)',
-                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)',
-                '&:hover': {
-                  background: 'rgba(0, 50, 100, 0.6)',
-                },
-              }}
-            >
-              <GroupIcon sx={{ color: '#FFFFFF', marginRight: '10px' }} />
-              <Typography
+            <a href={`#${text}`} style={{ width: "100%" }}>
+              <ListItemButton
                 sx={{
-                  color: '#FFFFFF',
-                  fontFamily: 'CounterStreamDemoRegular',
-                  textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+                  margin: '10px',
+                  borderRadius: '8px',
+                  background: 'rgba(0, 50, 100, 0.4)',
+                  backdropFilter: 'blur(15px)',
+                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)',
+                  '&:hover': {
+                    background: 'rgba(0, 50, 100, 0.6)',
+                  },
                 }}
               >
-                {text.toUpperCase()}
-              </Typography>
-            </ListItemButton>
+                <GroupIcon sx={{ color: '#FFFFFF', marginRight: '10px' }} />
+                <Typography
+                  sx={{
+                    color: '#FFFFFF',
+                    fontFamily: 'CounterStreamDemoRegular',
+                    textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+                  }}
+                >
+                  {text.toUpperCase()}
+                </Typography>
+              </ListItemButton>
+            </a>
           </ListItem>
         ))}
       </List>
@@ -99,48 +101,19 @@ function ResponsiveDrawer(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar
-        position="fixed"
-        sx={{
-          width: { lg: `calc(100% - ${drawerWidth}px)` },
-          ml: { lg: `${drawerWidth}px` },
-          backgroundColor: 'rgba(0, 0, 0, 0.8)',
-          backdropFilter: 'blur(10px)',
-          boxShadow: 'none',
-        }}
-      >
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { lg: 'none' } }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ fontFamily: 'CounterStreamDemoRegular' }}
-          >
-            Technovate
-          </Typography>
-        </Toolbar>
-      </AppBar>
 
       {/* Sidebar Drawer for Larger Screens */}
       <Box
         component="nav"
-        sx={{ width: { lg: drawerWidth }, flexShrink: { lg: 0 } }}
+        sx={{ width: { md: drawerWidth }, flexShrink: { md: 0 } }} // Changed lg to md
         aria-label="mailbox folders"
       >
         <Drawer
           container={container}
           variant="permanent"
+          className='custom-scrollbar'
           sx={{
-            display: { xs: 'none', lg: 'block' },
+            display: { xs: 'none', md: 'block' }, // Changed lg to md
             '& .MuiDrawer-paper': {
               boxSizing: 'border-box',
               width: drawerWidth,
@@ -155,7 +128,8 @@ function ResponsiveDrawer(props) {
       </Box>
 
       {/* Main Content */}
-      
+
+
       {/* Horizontal Drawer at Bottom for Smaller Screens */}
       <Box
         component="nav"
@@ -163,7 +137,7 @@ function ResponsiveDrawer(props) {
           width: '100%',
           position: 'fixed',
           bottom: 0,
-          display: { xs: 'flex', lg: 'none' },
+          display: { xs: 'flex', md: 'none' }, // Changed lg to md
           overflowX: 'auto',
           whiteSpace: 'nowrap',
           background: 'rgba(0, 0, 0, 0.6)',
@@ -171,25 +145,27 @@ function ResponsiveDrawer(props) {
         }}
       >
         {teams.map((text) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton
-              sx={{
-                margin: '10px',
-                borderRadius: '8px',
-                background: 'rgba(0, 50, 100, 0.4)',
-                backdropFilter: 'blur(15px)',
-                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)',
-                '&:hover': {
-                  background: 'rgba(0, 50, 100, 0.6)',
-                },
-                color: '#FFFFFF',
-                textAlign: 'center',
-                minWidth: '150px', // Adjust width for better horizontal scrolling
-              }}
-            >
-              {text.toUpperCase()}
-            </ListItemButton>
-          </ListItem>
+          <a href={`#${text}`} style={{ width: "100%" }}>
+            <ListItem key={text} disablePadding>
+              <ListItemButton
+                sx={{
+                  margin: '10px',
+                  borderRadius: '8px',
+                  background: 'rgba(0, 50, 100, 0.4)',
+                  backdropFilter: 'blur(15px)',
+                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)',
+                  '&:hover': {
+                    background: 'rgba(0, 50, 100, 0.6)',
+                  },
+                  color: '#FFFFFF',
+                  textAlign: 'center',
+                  minWidth: '150px',
+                }}
+              >
+                {text.toUpperCase()}
+              </ListItemButton>
+            </ListItem>
+          </a>
         ))}
       </Box>
     </Box>

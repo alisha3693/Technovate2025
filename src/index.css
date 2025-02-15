@@ -9,6 +9,11 @@
 
   src: url('./assets/Fonts/CounterStreamDemoRegular.ttf');
 }
+
+*{
+  scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     border: 0;
