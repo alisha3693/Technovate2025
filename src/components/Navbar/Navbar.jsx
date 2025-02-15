@@ -36,6 +36,11 @@ export default function NavBar() {
     setMenuOpen(false); // Reset the animation state
   };
 
+  const handleTeamClick = () => {
+    navigate('/team');
+    handleMenuClose();
+  };
+
   const handleScheduleClick = () => {
     navigate('/schedule');
     handleMenuClose();
@@ -119,7 +124,7 @@ export default function NavBar() {
             <MenuItem onClick={handleEventClick} sx={navMenuStyle}>
               Events
             </MenuItem>
-            <MenuItem onClick={handleMenuClose} sx={navMenuStyle}>
+            <MenuItem onClick={handleTeamClick} sx={navMenuStyle}>
               Team
             </MenuItem>
             <MenuItem onClick={handleSponsorClick} sx={navMenuStyle}>

@@ -9,6 +9,7 @@ import Events from "./components/Home/Events/events"
 import Home from "./pages/Home/Home";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Loading from "./components/loadingpage"
+import Team from "./pages/Team/Team";
 
 // Define routes for your application
 const router = createBrowserRouter([
@@ -49,6 +50,16 @@ const router = createBrowserRouter([
                 <AudioPlayer />
                 <Events />
                 <ContactUs/>
+            </>
+        ),
+    },
+
+    {
+        path: '/team',
+        element: (
+            <>
+                <AudioPlayer />
+                <Team/>
             </>
         ),
     }
