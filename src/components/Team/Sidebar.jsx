@@ -26,7 +26,7 @@ const teams = [
   'Sports',
   'Design and Doc',
   'Video Editing',
-  'Hospitality and Logistics',
+  'Logistics & Hospitality',
   'Comic Con',
   'Website',
 ];
