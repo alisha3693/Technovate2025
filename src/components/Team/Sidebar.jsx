@@ -13,6 +13,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import GroupIcon from '@mui/icons-material/Group';
 import { Toolbar } from '@mui/material';
 import TeamSection from './TeamSection';
+import './Sidebar.css';
 
 const drawerWidth = 300;
 
@@ -31,7 +32,7 @@ const teams = [
   'Website',
 ];
 
-function ResponsiveDrawer(props) {
+function ResponsiveDrawers(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -119,11 +120,17 @@ function ResponsiveDrawer(props) {
               width: drawerWidth,
               background: 'rgba(0, 0, 0, 0.6)',
               backdropFilter: 'blur(10px)',
+              overflowY: 'auto',  // Add this line
+              '&::-webkit-scrollbar': {
+                display: 'block'
+              }
             },
           }}
           open
         >
-          {drawer}
+          <div className="custom-scrollbar">  {/* Added this wrapper */}
+            {drawer}
+          </div>
         </Drawer>
       </Box>
 
@@ -133,20 +140,21 @@ function ResponsiveDrawer(props) {
       {/* Horizontal Drawer at Bottom for Smaller Screens */}
       <Box
         component="nav"
+        className="custom-scrollbar-horizontal"
         sx={{
           width: '100%',
           position: 'fixed',
           bottom: 0,
-          display: { xs: 'flex', md: 'none' }, // Changed lg to md
-          overflowX: 'auto',
+          display: { xs: 'flex', md: 'none' },
           whiteSpace: 'nowrap',
           background: 'rgba(0, 0, 0, 0.6)',
           backdropFilter: 'blur(10px)',
+          padding: '10px 0',
         }}
       >
         {teams.map((text) => (
-          <a href={`#${text}`} style={{ width: "100%" }}>
-            <ListItem key={text} disablePadding>
+          <a href={`#${text}`} style={{ width: "100%" }} key={text}>
+            <ListItem disablePadding>
               <ListItemButton
                 sx={{
                   margin: '10px',
@@ -172,4 +180,4 @@ function ResponsiveDrawer(props) {
   );
 }
 
-export default ResponsiveDrawer;
+export default ResponsiveDrawers;
