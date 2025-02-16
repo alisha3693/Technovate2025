@@ -35,14 +35,14 @@ export default function TeamSection() {
               <>
                 <h2 className="group-name">Senior Team</h2>
                 <div className="row">
-                  {group.seniormembers.map((member,index) => (
+                  {group.seniormembers.map((member, index) => (
                     <div
                       key={index}
                       className="team-member"
                     >
-                      {/* <div className="box">
+                      <div className="box">
                         <img src={member.image} alt={member.name} className="box-image" />
-                      </div> */}
+                      </div>
                       <div className="box-name">{member.name}</div>
                     </div>
                   ))}
