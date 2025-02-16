@@ -46,10 +46,10 @@ export default function NavBar() {
     handleMenuClose();
   };
 
-  const handleSponsorClick = () => {
-    navigate('/sponsors');
-    handleMenuClose();
-  }
+  // const handleSponsorClick = () => {
+  //   navigate('/sponsors');
+  //   handleMenuClose();
+  // }
 
   
   const handleEventClick = () => {
@@ -127,9 +127,9 @@ export default function NavBar() {
             <MenuItem onClick={handleTeamClick} sx={navMenuStyle}>
               Team
             </MenuItem>
-            <MenuItem onClick={handleSponsorClick} sx={navMenuStyle}>
+            {/* <MenuItem onClick={handleSponsorClick} sx={navMenuStyle}>
               Sponsor
-            </MenuItem>
+            </MenuItem> */}
             <MenuItem onClick={handleScheduleClick} sx={navMenuStyle}>
               Schedule
             </MenuItem>
