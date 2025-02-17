@@ -153,7 +153,7 @@ const teamData = [
       { name: "Keshavee Bisen", image: KeshaveeBisen },
       { name: "Meenal", image: Meenal },
       { name: "Sushil", image: Sushil },
-      { name: "Anshul Pratap Lakra", image: AnshulPrakash },
+      { name: "Anshul Pratap Lakra", image: "" },
       { name: "Jaiprakash Sahu", image: JaiprakashSahu },
     ],
   },
