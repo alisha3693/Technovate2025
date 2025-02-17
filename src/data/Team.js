@@ -16,7 +16,7 @@ import ViratPatel from "../assets/Team/Sponsorship/ViratPatel.jpg";
 //Cultural
 import AssemRai from "../assets/Team/Cultural/AseemRai.jpg";
 import divyaKumarBanjare from "../assets/Team/Cultural/divyakumarbanjare.png";
-import JaiprakashSahu from "../assets/Team/Cultural/JaiprakashSahu.jpg";
+import JaiprakashSahu from "../assets/Team/Cultural/JaiprakashSahu.jpeg";
 import KeshaveeBisen from "../assets/Team/Cultural/KeshaveeBisen.jpg";
 import Meenal from "../assets/Team/Cultural/MeenalPatle.jpg";
 import OjashVerma from "../assets/Team/Cultural/OjashVerma.jpg";
@@ -41,7 +41,7 @@ import vanshgoel from "../assets/Team/Logistics/VanshGoel.jpg";
 
 //Website
 import AlishaTripathi from "../assets/Team/Website/AlishaTripathi.jpg";
-import MohitSharma from "../assets/Team/Website/MohitSharma.jpg";
+import MohitSharma from "../assets/Team/Website/MohitSharma.jpeg";
 
 //sports
 import AnanyaRajawat from "../assets/Team/Sports/AnanyaRajawat.jpg";
