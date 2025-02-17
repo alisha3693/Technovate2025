@@ -2,7 +2,7 @@ import priyadarshi from "../assets/Team/Website/priyadarshi.jpg";
 import yashJoshi from "../assets/Team/Website/yashjoshi.jpg";
 //Overall Coordinators
 
-import akshatShreeMishra from "../assets/Team/Coordinator/akshatShreeMishra.jpeg";
+// import akshatShreeMishra from "../assets/Team/Coordinator/akshatShreeMishra.jpeg";
 import AkshatSrivastava from "../assets/Team/Coordinator/AkshatSrivastava.jpeg";
 import AyushYadav from "../assets/Team/Coordinator/AyushYadav.jpeg";
 import DebashishPadhy from "../assets/Team/Coordinator/DebashishPadhy.jpeg";
@@ -38,10 +38,10 @@ const teamData = [
   {
     groupName: "Overall Coordinators",
     heads: [
-      {
-        name: "Akshat Shree Mishra",
-        image: akshatShreeMishra,
-      },
+      // {
+      //   name: "Akshat Shree Mishra",
+      //   image: akshatShreeMishra,
+      // },
       {
         name: "Yash Mohan Joshi",
         image: AkshatSrivastava,
