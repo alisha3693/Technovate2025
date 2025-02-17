@@ -18,10 +18,10 @@ import OjashVerma from "../assets/Team/Cultural/OjashVerma.jpg";
 import AssemRai from "../assets/Team/Cultural/AseemRai.jpg";
 
 //Design
-import Shivani from "../assets/Team/Design/RSaiShivani.JPEG";
+import Shivani from "../assets/Team/Design/RSaiShivani.jpeg";
 //Documentation
 import KanikaMalhotra from "../assets/Team/Documentation/KanikaMalhotra.jpg";
-import PriteshBanjare from "../assets/Team/Documentation/PriteshBanjare.JPEG";
+import PriteshBanjare from "../assets/Team/Documentation/PriteshBanjare.jpeg";
 
 //Logistics & Hospitality
 import modhkaif from "../assets/Team/Logistics/mohdkaif.jpg";
