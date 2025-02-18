@@ -10,22 +10,38 @@ import priyanshusriv from "../assets/Team/Coordinator/Priyanshu_Srivastava.jpg";
 import SatvikYadav from "../assets/Team/Coordinator/SatvikYadav.jpg";
 //sponsorship
 import aayushKulkarni from "../assets/Team/Sponsorship/aayushkulkarni.jpg";
+import NeerajNetam from "../assets/Team/Sponsorship/NeerajNetam.jpg";
+import ViratPatel from "../assets/Team/Sponsorship/ViratPatel.jpg";
 
 //Cultural
-import soumyaDubey from "../assets/Team/Cultural/soumyadubey.jpg";
-import divyaKumarBanjare from "../assets/Team/Cultural/divyakumarbanjare.png";
-import OjashVerma from "../assets/Team/Cultural/OjashVerma.jpg";
 import AssemRai from "../assets/Team/Cultural/AseemRai.jpg";
+import divyaKumarBanjare from "../assets/Team/Cultural/divyakumarbanjare.png";
+import JaiprakashSahu from "../assets/Team/Cultural/JaiprakashSahu.jpeg";
+import KeshaveeBisen from "../assets/Team/Cultural/KeshaveeBisen.jpg";
+import Meenal from "../assets/Team/Cultural/MeenalPatle.jpg";
+import OjashVerma from "../assets/Team/Cultural/OjashVerma.jpg";
+import soumyaDubey from "../assets/Team/Cultural/soumyadubey.jpg";
+import Sushil from "../assets/Team/Cultural/Sushil.jpg";
 
 //Design
+import AanchalRajawat from "../assets/Team/Design/AanchalRajawat.jpg";
 import Shivani from "../assets/Team/Design/RSaiShivani.jpeg";
+
 //Documentation
 import KanikaMalhotra from "../assets/Team/Documentation/KanikaMalhotra.jpg";
 import PriteshBanjare from "../assets/Team/Documentation/PriteshBanjare.jpeg";
 
 //Logistics & Hospitality
+import himanshukothari from "../assets/Team/Logistics/HimanshuKotharia.jpg";
+import jagdishmadkami from "../assets/Team/Logistics/JagdishMadkami.jpg";
 import modhkaif from "../assets/Team/Logistics/mohdkaif.jpg";
+import namangarg from "../assets/Team/Logistics/NamanGarg.jpg";
 import saurabhdixit from "../assets/Team/Logistics/saurabhdixit.jpg";
+import vanshgoel from "../assets/Team/Logistics/VanshGoel.jpg";
+
+//Website
+import AlishaTripathi from "../assets/Team/Website/AlishaTripathi.jpg";
+import MohitSharma from "../assets/Team/Website/MohitSharma.jpeg";
 
 //sports
 import AnanyaRajawat from "../assets/Team/Sports/AnanyaRajawat.jpg";
@@ -98,10 +114,12 @@ const teamData = [
     ],
     seniormembers: [
       {
-        name: "Aayush Kulkarni",
+        name: "Virat Patel",
+        image: ViratPatel,
       },
       {
-        name: "Aayush Kulkarni",
+        name: "Neeraj Netam",
+        image: NeerajNetam,
       },
     ],
   },
@@ -132,12 +150,11 @@ const teamData = [
       },
     ],
     seniormembers: [
-      {
-        name: "Aayush Kulkarni",
-      },
-      {
-        name: "Aayush Kulkarni",
-      },
+      { name: "Keshavee Bisen", image: KeshaveeBisen },
+      { name: "Meenal", image: Meenal },
+      { name: "Sushil", image: Sushil },
+      { name: "Anshul Pratap Lakra", image: "" },
+      { name: "Jaiprakash Sahu", image: JaiprakashSahu },
     ],
   },
   {
@@ -163,12 +180,11 @@ const teamData = [
       },
     ],
     seniormembers: [
-      {
-        name: "Aayush Kulkarni",
-      },
-      {
-        name: "Aayush Kulkarni",
-      },
+      { name: "Jagdish Madkami", image: jagdishmadkami },
+      { name: "Vansh Goel", image: vanshgoel },
+      { name: "Naman Garg", image: namangarg },
+      { name: "Himanshu Singh Kotharia", image: himanshukothari },
+      { name: "Saurabh Dixit", image: saurabhdixit },
     ],
   },
   {
@@ -194,12 +210,8 @@ const teamData = [
       },
     ],
     seniormembers: [
-      {
-        name: "Aayush Kulkarni",
-      },
-      {
-        name: "Aayush Kulkarni",
-      },
+      { name: "Mohit Sharma", image: MohitSharma },
+      { name: "Alisha Tripathi", image: AlishaTripathi },
     ],
   },
   {
@@ -221,12 +233,7 @@ const teamData = [
       },
     ],
     seniormembers: [
-      {
-        name: "Aayush Kulkarni",
-      },
-      {
-        name: "Aayush Kulkarni",
-      },
+      { name: "Aanchal Rajawat", image: AanchalRajawat },
     ],
   },
   {
