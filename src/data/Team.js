@@ -42,7 +42,7 @@ import vanshgoel from "../assets/Team/Logistics/VanshGoel.jpg";
 //Website
 import AlishaTripathi from "../assets/Team/Website/AlishaTripathi.jpg";
 import MohitSharma from "../assets/Team/Website/MohitSharma.jpeg";
-// import Manas from "../assets/Team/Website/ManasChoudhary.JPG";
+import Manas from "../assets/Team/Website/ManasChoudhary.png";
 //sports
 import AnanyaRajawat from "../assets/Team/Sports/AnanyaRajawat.jpg";
 
@@ -102,8 +102,8 @@ const teamData = [
     ],
     members: [
       {
-        // name: "Manas Choudhary",
-        // image: Manas,
+        name: "Manas Choudhary",
+        image: Manas,
       },
     ],
   },
