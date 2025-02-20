@@ -42,7 +42,7 @@ import vanshgoel from "../assets/Team/Logistics/VanshGoel.jpg";
 //Website
 import AlishaTripathi from "../assets/Team/Website/AlishaTripathi.jpg";
 import MohitSharma from "../assets/Team/Website/MohitSharma.jpeg";
-
+import Manas from "../assets/Team/Website/ManasChoudhary.JPG";
 //sports
 import AnanyaRajawat from "../assets/Team/Sports/AnanyaRajawat.jpg";
 
@@ -79,12 +79,74 @@ const teamData = [
         image: SatvikYadav,
       },
     ],
-    members: [
+  },
+  {
+    groupName: "Tech",
+    // ...existing tech data...
+  },
+  {
+    groupName: "Website",
+    heads: [
       {
-        name: "Aayush Kulkarni",
+        name: "Priyadarshi Satyakam",
+        image: priyadarshi,
       },
       {
-        name: "Aayush Kulkarni",
+        name: "Yash Mohan Joshi",
+        image: yashJoshi,
+      },
+    ],
+    seniormembers: [
+      { name: "Mohit Sharma", image: MohitSharma },
+      { name: "Alisha Tripathi", image: AlishaTripathi },
+    ],
+    members: [
+      {
+        name: "Manas Choudhary",
+        image: Manas,
+      },
+    ],
+  },
+  {
+    groupName: "Design",
+    heads: [
+      {
+        name: "R Sai Shivani",
+        image: Shivani,
+      },
+    ],
+    members: [
+      {
+        name: "Priyadarshi Satyakam",
+        image: priyadarshi,
+      },
+      {
+        name: "Yash Mohan Joshi",
+        image: yashJoshi,
+      },
+    ],
+    seniormembers: [{ name: "Aanchal Rajawat", image: AanchalRajawat }],
+  },
+  {
+    groupName: "Documentation",
+    heads: [
+      {
+        name: "Kanika Malhotra",
+        image: KanikaMalhotra,
+      },
+      {
+        name: "Pritesh Banjare",
+        image: PriteshBanjare,
+      },
+    ],
+    members: [
+      {
+        name: "Priyadarshi Satyakam",
+        image: priyadarshi,
+      },
+      {
+        name: "Yash Mohan Joshi",
+        image: yashJoshi,
       },
     ],
     seniormembers: [
@@ -97,6 +159,10 @@ const teamData = [
     ],
   },
   {
+    groupName: "Marketing",
+    // ...existing marketing data...
+  },
+  {
     groupName: "Sponsorship",
     heads: [
       {
@@ -106,10 +172,31 @@ const teamData = [
     ],
     members: [
       {
-        name: "Aayush Kulkarni",
+        name: "Aakansha verma",
       },
       {
-        name: "Aayush Kulkarni",
+        name: "Pranjali upadhyay",
+      },
+      {
+        name: "Punyansh thakur",
+      },
+      {
+        name: "Tushar darsena",
+      },
+      {
+        name: "Ananya R Nair",
+      },
+      {
+        name: "Kshitij Jain",
+      },
+      {
+        name: "Darshna Sharma",
+      },
+      {
+        name: "Shivam Tiwari",
+      },
+      {
+        name: "Prakriti Thakur",
       },
     ],
     seniormembers: [
@@ -158,6 +245,64 @@ const teamData = [
     ],
   },
   {
+    groupName: "Sports",
+    heads: [
+      {
+        name: "Ananya Rajawat",
+        image: AnanyaRajawat,
+      },
+    ],
+    members: [
+      {
+        name: "Priyadarshi Satyakam",
+        image: priyadarshi,
+      },
+      {
+        name: "Yash Mohan Joshi",
+        image: yashJoshi,
+      },
+    ],
+    seniormembers: [
+      {
+        name: "Aayush Kulkarni",
+      },
+      {
+        name: "Aayush Kulkarni",
+      },
+    ],
+  },
+  {
+    groupName: "Video Editing",
+    heads: [
+      {
+        name: "Aditya Raj",
+        image: AdityaRaj,
+      },
+      {
+        name: "ApurvaSahu",
+        image: ApurvaSahu,
+      },
+    ],
+    members: [
+      {
+        name: "Priyadarshi Satyakam",
+        image: priyadarshi,
+      },
+      {
+        name: "Yash Mohan Joshi",
+        image: yashJoshi,
+      },
+    ],
+    seniormembers: [
+      {
+        name: "Aayush Kulkarni",
+      },
+      {
+        name: "Aayush Kulkarni",
+      },
+    ],
+  },
+  {
     groupName: "Logistics & Hospitality",
     heads: [
       {
@@ -188,142 +333,8 @@ const teamData = [
     ],
   },
   {
-    groupName: "Website",
-    heads: [
-      {
-        name: "Priyadarshi Satyakam",
-        image: priyadarshi,
-      },
-      {
-        name: "Yash Mohan Joshi",
-        image: yashJoshi,
-      },
-    ],
-    members: [
-      {
-        name: "Priyadarshi Satyakam",
-        image: priyadarshi,
-      },
-      {
-        name: "Yash Mohan Joshi",
-        image: yashJoshi,
-      },
-    ],
-    seniormembers: [
-      { name: "Mohit Sharma", image: MohitSharma },
-      { name: "Alisha Tripathi", image: AlishaTripathi },
-    ],
-  },
-  {
-    groupName: "Design",
-    heads: [
-      {
-        name: "R Sai Shivani",
-        image: Shivani,
-      },
-    ],
-    members: [
-      {
-        name: "Priyadarshi Satyakam",
-        image: priyadarshi,
-      },
-      {
-        name: "Yash Mohan Joshi",
-        image: yashJoshi,
-      },
-    ],
-    seniormembers: [
-      { name: "Aanchal Rajawat", image: AanchalRajawat },
-    ],
-  },
-  {
-    groupName: "Documentation",
-    heads: [
-      {
-        name: "Kanika Malhotra",
-        image: KanikaMalhotra,
-      },
-      {
-        name: "Pritesh Banjare",
-        image: PriteshBanjare,
-      },
-    ],
-    members: [
-      {
-        name: "Priyadarshi Satyakam",
-        image: priyadarshi,
-      },
-      {
-        name: "Yash Mohan Joshi",
-        image: yashJoshi,
-      },
-    ],
-    seniormembers: [
-      {
-        name: "Aayush Kulkarni",
-      },
-      {
-        name: "Aayush Kulkarni",
-      },
-    ],
-  },
-  {
-    groupName: "Sports",
-    heads: [
-      {
-        name: "Ananya Rajawat",
-        image: AnanyaRajawat,
-      },
-    ],
-    members: [
-      {
-        name: "Priyadarshi Satyakam",
-        image: priyadarshi,
-      },
-      {
-        name: "Yash Mohan Joshi",
-        image: yashJoshi,
-      },
-    ],
-    seniormembers: [
-      {
-        name: "Aayush Kulkarni",
-      },
-      {
-        name: "Aayush Kulkarni",
-      },
-    ],
-  },
-  {
-    groupName: "Video",
-    heads: [
-      {
-        name: "Aditya Raj",
-        image: AdityaRaj,
-      },
-      {
-        name: "ApurvaSahu",
-        image: ApurvaSahu,
-      },
-    ],
-    members: [
-      {
-        name: "Priyadarshi Satyakam",
-        image: priyadarshi,
-      },
-      {
-        name: "Yash Mohan Joshi",
-        image: yashJoshi,
-      },
-    ],
-    seniormembers: [
-      {
-        name: "Aayush Kulkarni",
-      },
-      {
-        name: "Aayush Kulkarni",
-      },
-    ],
+    groupName: "Comic Con",
+    // ...existing comic con data...
   },
 ];
 

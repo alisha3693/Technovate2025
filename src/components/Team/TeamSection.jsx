@@ -50,7 +50,6 @@ export default function TeamSection() {
               </>
             )}
 
-            {/* Junior Team Section */}
             {group.members && group.members.length > 0 && (
               <>
                 <h2 className="group-name">Junior Team</h2>
@@ -60,9 +59,11 @@ export default function TeamSection() {
                       key={index}
                       className="team-member"
                     >
-                      {/* <div className="box">
-                        <img src={member.image} alt={member.name} className="box-image" />
-                      </div> */}
+                      {(group.groupName === "Website" && member.image) && (
+                        <div className="box">
+                          <img src={member.image} alt={member.name} className="box-image" />
+                        </div>
+                      )}
                       <div className="box-name">{member.name}</div>
                     </div>
                   ))}
