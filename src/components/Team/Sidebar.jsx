@@ -65,7 +65,7 @@ function ResponsiveDrawers(props) {
       <Divider />
       <List>
         {teams.map((text) => (
-          <ListItem key={text} disablePadding>
+          <ListItem key={text} disablePadding className="sidebar-list-item">
             <a href={`#${text}`} style={{ width: "100%" }}>
               <ListItemButton
                 sx={{

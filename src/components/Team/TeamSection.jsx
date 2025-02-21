@@ -8,7 +8,16 @@ export default function TeamSection() {
       <div className="team-container">
         {teamData.map((group, index) => (
           <div key={index} className="team-group" id={`${group.groupName}`}>
-            <h2 className="group-name">{group.groupName}</h2>
+            <h2
+              className="group-name"
+              style={{
+                borderBottom: "2px solid rgba(255,255,255,0.3)",
+                marginBottom: "10px",
+                paddingBottom: "5px"
+              }}
+            >
+              {group.groupName}
+            </h2>
 
             {/* Heads Section */}
             {group.heads && group.heads.length > 0 && (

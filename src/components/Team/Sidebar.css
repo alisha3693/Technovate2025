@@ -50,8 +50,9 @@
   width: 8px;
 }
 
+/* Optional: refine scrollbar track color for a softer look */
 .MuiDrawer-paper::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.15);
   border-radius: 10px;
 }
 
@@ -63,4 +64,15 @@
 
 .MuiDrawer-paper::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.5);
+}
+
+.sidebar-list-item a {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.sidebar-list-item a:hover {
+  transform: scale(1.05);
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
 }
