@@ -14,7 +14,7 @@ import NeerajNetam from "../assets/Team/Sponsorship/NeerajNetam.jpg";
 import ViratPatel from "../assets/Team/Sponsorship/ViratPatel.jpg";
 
 //Tech
-import Ashutosh from "../assets/Team/Tech/Ashutosh Jaiswal.PNG";
+// import Ashutosh from "../assets/Team/Tech/Ashutosh Jaiswal.PNG";
 
 //Cultural
 import AssemRai from "../assets/Team/Cultural/AseemRai.jpg";
@@ -87,7 +87,7 @@ const teamData = [
   },
   {
     groupName: "Tech",
-    heads: [{ name: "Ashutosh Jaiswal", image: Ashutosh }],
+    heads: [],
     seniormembers: [],
     members: [
       {
