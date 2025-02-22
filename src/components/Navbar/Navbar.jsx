@@ -62,6 +62,11 @@ export default function NavBar() {
     handleMenuClose();
   }
 
+  const handleContact = () =>{
+    navigate('/footer');
+    handleMenuClose();
+  }
+
   return (
     <Box sx={{ flexGrow: 1, width: '100%', margin: '0' }}>
       <AppBar
@@ -145,7 +150,7 @@ export default function NavBar() {
               backgroundColor: 'transparent',
               textShadow: '0px 1px 2px rgba(0, 0, 0, 0.5)',
             }}
-          >
+          onClick={handleContact}>
             CONTACT
           </Typography>
         </Toolbar>
