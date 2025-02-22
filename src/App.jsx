@@ -63,6 +63,15 @@ const router = createBrowserRouter([
             </>
         ),
     }
+    ,
+    {
+        path:'/footer',
+        element :(
+            <>
+            <ContactUs/>
+            </>
+        )
+    }
 ]);
 
 export default function App() {

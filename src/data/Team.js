@@ -64,7 +64,7 @@ const teamData = [
       //   image: akshatShreeMishra,
       // },
       {
-        name: "Yash Mohan Joshi",
+        name: "Akshat Srivastava",
         image: AkshatSrivastava,
       },
       {
@@ -186,10 +186,8 @@ const teamData = [
     seniormembers: [
       {
         name: "Aayush Kulkarni",
-      },
-      {
-        name: "Aayush Kulkarni",
-      },
+        image: aayushKulkarni,
+      }
     ],
   },
   {
