@@ -445,7 +445,22 @@ const teamData = [
   },
   {
     groupName: "Comic Con",
-    // ...existing comic con data...
+    heads: [
+      {
+        name: "Ojas Verma",
+        image: modhkaif,
+      },
+      {
+        name: "Aseem rai",
+        image: saurabhdixit,
+      },
+    ],
+    members: [],
+    seniormembers: [
+      { name: "Meenal", image: Meenal },
+      { name: "Shreyash Keshari" },
+      { name: "Harsh Shrivastava " },
+    ],
   },
 ];
 
