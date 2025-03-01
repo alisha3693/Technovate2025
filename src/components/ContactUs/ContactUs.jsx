@@ -11,26 +11,26 @@ const ContactUs = () => {
     <div className="contact-us-container" id="ContactUs">
       <h1>Contact Us</h1>
       <div className="socials">
-        <a href="https://www.instagram.com/rootvestors/">
+        <a href="https://www.instagram.com/technovate_iiitnr/?hl=en" target="_main">
           <InstagramIcon fontSize="large" style={{ color: 'rgb(187, 0, 255)' }} />
         </a>
-        <a href="https://www.linkedin.com/company/rootvestors/posts/?feedView=all">
+        <a href="https://www.linkedin.com/company/technovate_iiitnr/posts/?feedView=all" target="_main">
           <LinkedInIcon fontSize="large" style={{ color: 'rgb(187, 0, 255)' }} />
         </a>
-        <a href="https://twitter.com">
+        <a href="https://facebook.com" target="_main">
           <FacebookIcon fontSize="large" style={{ color: 'rgb(187, 0, 255)' }} />
         </a>
-        <a href="https://facebook.com">
+        <a href="https://x.com/technovateiiit" target="_main">
           <XIcon fontSize="large" style={{ color: 'rgb(187, 0, 255)' }} />
         </a>
       </div>
       <div className="contact-us-flex">
         <div className="contact-us-item">
           <h2>Email</h2>
-          <a href="mailto:rootvestors@gmail.com">
+          <a href="mailto:technovate@iiitnr.edu.in">
             <p className="mail-contact-us">
               <MailOutlineIcon />
-              &nbsp;rootvestors@gmail.com
+              &nbsp;technovate@iiitnr.edu.in
             </p>
           </a>
           <br />
@@ -38,14 +38,14 @@ const ContactUs = () => {
           <a href="/">
             <p className="quick-links">Home</p>
           </a>
-          <a href="/courses">
-            <p className="quick-links">Courses</p>
+          <a href="/events">
+            <p className="quick-links">Events</p>
           </a>
-          <a href="#FAQ">
-            <p className="quick-links">FAQs</p>
+          <a href="/team">
+            <p className="quick-links">Team</p>
           </a>
-          <a href="/newsletter">
-            <p className="quick-links">Newsletter</p>
+          <a href="/schedule">
+            <p className="quick-links">Schedule</p>
           </a>
         </div>
         <div className="contact-us-item">

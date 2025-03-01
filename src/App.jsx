@@ -10,6 +10,7 @@ import Home from "./pages/Home/Home";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Loading from "./components/loadingpage";
 import Team from "./pages/Team/Team";
+import SmoothScrolling from "./components/SmoothScrollingWrapper";
 
 // Define routes for your application
 const router = createBrowserRouter([
@@ -90,7 +91,6 @@ export default function App() {
 
     return (
         <>
-
         {loading ? (<Loading /> ): 
         (<RouterProvider router={router}>
         </RouterProvider>)
