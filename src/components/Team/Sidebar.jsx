@@ -19,17 +19,17 @@ const drawerWidth = 300;
 
 const teams = [
   'Overall Coordinators',
-  'Tech',
-  'Website',
-  'Design',
-  'Documentation',
-  'Marketing',
   'Sponsorship',
+  'Marketing',
+  'Tech',
   'Cultural',
   'Sports',
+  'Design',
+  'Documentation',
   'Video Editing',
   'Logistics & Hospitality',
   'Comic Con',
+  'Website',
 ];
 
 function ResponsiveDrawers(props) {

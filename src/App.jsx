@@ -1,5 +1,5 @@
 import React from "react";
-import {useEffect , useState} from "react"
+import { useEffect, useState } from "react"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AudioPlayer from "./components/AudioPlayer/AudioPlayer";
 import NavBar from "./components/Navbar/Navbar";
@@ -47,10 +47,10 @@ const router = createBrowserRouter([
         path: '/events',
         element: (
             <>
-            <NavBar />
+                <NavBar />
                 <AudioPlayer />
                 <Events />
-                <ContactUs/>
+                <ContactUs />
             </>
         ),
     },
@@ -59,17 +59,18 @@ const router = createBrowserRouter([
         path: '/team',
         element: (
             <>
+                <NavBar />
                 <AudioPlayer />
-                <Team/>
+                <Team />
             </>
         ),
     }
     ,
     {
-        path:'/footer',
-        element :(
+        path: '/footer',
+        element: (
             <>
-            <ContactUs/>
+                <ContactUs />
             </>
         )
     }
@@ -77,24 +78,24 @@ const router = createBrowserRouter([
 
 export default function App() {
 
-    const [loading , setLoading] = useState(true);
+    const [loading, setLoading] = useState(true);
 
-    useEffect(()=>{
+    useEffect(() => {
 
-        const timer = setTimeout(()=>{
+        const timer = setTimeout(() => {
             setLoading(false);
         }, 5000)
 
-        return()=> clearTimeout(timer);
+        return () => clearTimeout(timer);
     })
 
 
     return (
         <>
-        {loading ? (<Loading /> ): 
-        (<RouterProvider router={router}>
-        </RouterProvider>)
-        }
+            {loading ? (<Loading />) :
+                (<RouterProvider router={router}>
+                </RouterProvider>)
+            }
         </>
     );
 }
