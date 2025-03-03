@@ -1,13 +1,11 @@
 .outer-div {
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    width: 259px;
+    width: 280px;
     height: 300px;
     border: black 1px solid;
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
+    border-radius: 10px;
+    /* align-items: left; */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -18,15 +16,15 @@
 
 .image-div {
     height: 70%;
-    width: 90%;
-    margin: 4px;
+    width: 100%;
+    
 }
 
 .title-div {
     width: 90%;
     margin: 2px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-self: center;
 }
 

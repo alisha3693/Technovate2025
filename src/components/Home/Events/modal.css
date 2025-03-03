@@ -1,125 +1,125 @@
 /* Modal Overlay */
 .modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Transparent black */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
 .main-modal {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 /* Modal Content */
 .modal-overlay > .modal-content {
-  margin-top: 120px;
-  width: 80%;
-  height: 80%;
+    margin-top: 120px;
+    width: 80%;
+    height: 80%;
 }
 
 .modal-content-nav {
-  display: flex;
-  height: 20%;
+    display: flex;
+    height: 20%;
 }
 
 .modal-content-boxes {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(120px, 1fr)); /* Adjust columns */
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  /* Add scroll behavior */
-  max-height: 80%;  /* Ensure it doesn't exceed modal height */
-  overflow-y: auto; /* Enable vertical scrolling */
-  padding-right: 10px; /* Avoid content touching the scrollbar */
+    display: grid;
+    grid-template-columns: repeat(3, minmax(120px, 1fr)); /* Adjust columns */
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    /* Add scroll behavior */
+    max-height: 80%;  /* Ensure it doesn't exceed modal height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 10px; /* Avoid content touching the scrollbar */
 }
 
 .modal-content-nav > h1 {
-  margin: none;
+    margin: none;
 }
 
 .modal-content-nav > button {
-  display: flex;
-  margin-left: auto;
-  width: 5%;
-  height: 15%;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    margin-left: auto;
+    width: 5%;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-content-nav > img {
-  width: 50%;
-  height: 100%;
+    width: 50%;
+    height: 100%;
 }
 
 .modal-content {
-  background-color: rgba(141, 33, 49, 0.81);
-  padding: 20px;
-  border-radius: 5px;
-  width: 60%;
-  height: 60%;
-  text-align: justify;
-  color: white;
-  transition: width 0.3s ease, height 0.3s ease;
+    background-color: rgba(141, 33, 49, 0.81);
+    padding: 20px;
+    border-radius: 5px;
+    width: 60%;
+    height: 60%;
+    text-align: justify;
+    color: white;
+    transition: width 0.3s ease, height 0.3s ease;
 }
 
 /* Button Styles */
 button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
 
 /* Responsive styles */
 @media only screen and (max-width: 768px) {
-  .modal-content {
-      width: 80%;
-      height: 80%;
-  }
+    .modal-content {
+        width: 80%;
+        height: 80%;
+    }
 
-  .modal-content-nav {
-      height: 15%;
-  }
+    .modal-content-nav {
+        height: 15%;
+    }
 
-  .modal-content-nav > button {
-      width: 30px;
-      height: 30px;
-  }
+    .modal-content-nav > button {
+        width: 30px;
+        height: 30px;
+    }
 
-  .modal-content-boxes {
-      grid-template-columns: repeat(2, minmax(120px, 1fr));
-  }
+    .modal-content-boxes {
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+    }
 }
 
 @media only screen and (max-width: 480px) {
-  .modal-content {
-      width: 90%;
-      height: 90%;
-  }
+    .modal-content {
+        width: 90%;
+        height: 90%;
+    }
 
-  .modal-content-nav {
-      height: 10%;
-  }
+    .modal-content-nav {
+        height: 10%;
+    }
 
-  .modal-content-nav > button {
-      width: 25px;
-      height: 25px;
-  }
+    .modal-content-nav > button {
+        width: 25px;
+        height: 25px;
+    }
 
-  .modal-content-boxes {
-      grid-template-columns: 1fr;
-  }
+    .modal-content-boxes {
+        grid-template-columns: 1fr;
+    }
 }
