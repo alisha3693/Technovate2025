@@ -135,9 +135,9 @@ export default function NavBar() {
             {/* <MenuItem onClick={handleSponsorClick} sx={navMenuStyle}>
               Sponsor
             </MenuItem> */}
-            <MenuItem onClick={handleScheduleClick} sx={navMenuStyle}>
+            {/* <MenuItem onClick={handleScheduleClick} sx={navMenuStyle}>
               Schedule
-            </MenuItem>
+            </MenuItem> */}
           </Menu>
 
           <Typography

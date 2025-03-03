@@ -12,7 +12,7 @@ export default function Events() {
 
   // Open modal with the event title
   const openModal = (title , modal_text) => {
-    console.log(`Opening modal for: ${title}`); // Debugging log
+
     setModalTitle(title);
     setModalText(modal_text);
     setIsOpen(true);
