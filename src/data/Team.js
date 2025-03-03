@@ -57,7 +57,7 @@ import MohitSharma from "../assets/Team/Website/MohitSharma.jpeg";
 import Manas from "../assets/Team/Website/ManasChoudhary.png";
 //sports
 import AnanyaRajawat from "../assets/Team/Sports/Ananya.jpg";
-
+import Yash_Raj from "../assets/Team/Sports/Yash_Raj.jpeg";
 //Video Editing
 import AdityaRaj from "../assets/Team/Video/AdityaRaj.jpg";
 import ApurvaSahu from "../assets/Team/Video/ApurvaSahu.jpg";
@@ -293,6 +293,10 @@ const teamData = [
       {
         name: "Ananya Rajawat",
         image: AnanyaRajawat,
+      },
+      {
+        name: "Yash Raj",
+        image: Yash_Raj,
       },
     ],
     members: [
