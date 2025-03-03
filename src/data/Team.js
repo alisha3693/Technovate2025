@@ -2,7 +2,7 @@ import priyadarshi from "../assets/Team/Website/priyadarshi.jpg";
 import yashJoshi from "../assets/Team/Website/yashjoshi.jpg";
 //Overall Coordinators
 
-// import akshatShreeMishra from "../assets/Team/Coordinator/akshatShreeMishra.jpeg";
+import akshatShreeMishra from "../assets/Team/Coordinator/akshatShreeMishra.jpeg";
 import AkshatSrivastava from "../assets/Team/Coordinator/AkshatSrivastava.jpeg";
 import AyushYadav from "../assets/Team/Coordinator/AyushYadav.jpeg";
 import DebashishPadhy from "../assets/Team/Coordinator/DebashishPadhy.jpeg";
@@ -14,7 +14,15 @@ import NeerajNetam from "../assets/Team/Sponsorship/NeerajNetam.jpg";
 import ViratPatel from "../assets/Team/Sponsorship/ViratPatel.jpg";
 
 //Tech
-// import Ashutosh from "../assets/Team/Tech/Ashutosh Jaiswal.PNG";
+import Ashutosh from "../assets/Team/Tech/Ashutosh.jpeg";
+import Venkarta from "../assets/Team/Tech/Venkata.png";
+import SameerYadav from "../assets/Team/Tech/SameerYadav.jpg";
+import AryanKumarBaghel from "../assets/Team/Tech/AryanKumarBaghel.webp";
+import Anish from "../assets/Team/Tech/Anish.jpg";
+import PranjalAgrawal from "../assets/Team/Tech/PranjalAgrawal.jpg";
+import SayyedRaahimAdnan from "../assets/Team/Tech/SayyedRaahimAdnan.jpg";
+import Kushwaha from "../assets/Team/Tech/Kushwaha.jpg";
+import Pandey from "../assets/Team/Tech/Pandey.jpg";
 
 //Cultural
 import AssemRai from "../assets/Team/Cultural/AseemRai.jpg";
@@ -25,9 +33,10 @@ import Meenal from "../assets/Team/Cultural/MeenalPatle.jpg";
 import OjashVerma from "../assets/Team/Cultural/OjashVerma.jpg";
 import soumyaDubey from "../assets/Team/Cultural/soumyadubey.jpg";
 import Sushil from "../assets/Team/Cultural/Sushil.jpg";
+import AnshulPratapLakra from "../assets/Team/Cultural/AnshulPratapLakra.jpeg";
 
 //Design
-import AanchalRajawat from "../assets/Team/Design/AanchalRajawat.jpg";
+import AanchalRajawat from "../assets/Team/Design/Aaanchal.png";
 import Shivani from "../assets/Team/Design/RSaiShivani.jpeg";
 
 //Documentation
@@ -47,7 +56,7 @@ import AlishaTripathi from "../assets/Team/Website/AlishaTripathi.jpg";
 import MohitSharma from "../assets/Team/Website/MohitSharma.jpeg";
 import Manas from "../assets/Team/Website/ManasChoudhary.png";
 //sports
-import AnanyaRajawat from "../assets/Team/Sports/AnanyaRajawat.jpg";
+import AnanyaRajawat from "../assets/Team/Sports/Ananya.jpg";
 
 //Video Editing
 import AdityaRaj from "../assets/Team/Video/AdityaRaj.jpg";
@@ -59,10 +68,10 @@ const teamData = [
   {
     groupName: "Overall Coordinators",
     heads: [
-      // {
-      //   name: "Akshat Shree Mishra",
-      //   image: akshatShreeMishra,
-      // },
+      {
+        name: "Akshat Shree Mishra",
+        image: akshatShreeMishra,
+      },
       {
         name: "Akshat Srivastava",
         image: AkshatSrivastava,
@@ -86,9 +95,138 @@ const teamData = [
     ],
   },
   {
+    groupName: "Sponsorship",
+    heads: [
+      {
+        name: "Aayush Kulkarni",
+        image: aayushKulkarni,
+      },
+    ],
+    members: [
+      {
+        name: "Aakansha verma",
+      },
+      {
+        name: "Pranjali upadhyay",
+      },
+      {
+        name: "Punyansh thakur",
+      },
+      {
+        name: "Tushar darsena",
+      },
+      {
+        name: "Ananya R Nair",
+      },
+      {
+        name: "Kshitij Jain",
+      },
+      {
+        name: "Darshna Sharma",
+      },
+      {
+        name: "Shivam Tiwari",
+      },
+      {
+        name: "Prakriti Thakur",
+      },
+    ],
+    seniormembers: [
+      {
+        name: "Neeraj Netam",
+        image: NeerajNetam,
+      },
+    ],
+  },
+  {
+    groupName: "Marketing",
+    heads: [
+      {
+        name: "priyanshu ",
+        image: priyanshusriv,
+      },
+    ],
+    members: [
+      {
+        name: "Thomas Sajeev Varghese ",
+      },
+      {
+        name: "Tenneti Vineel Krishna ",
+      },
+      {
+        name: "Shashank Bhoi",
+      },
+      {
+        name: "Aayush Agrawal",
+      },
+      {
+        name: "Shikhar Varshney",
+      },
+      {
+        name: "Sumedha Chandak",
+      },
+      {
+        name: "Soumil Garg",
+      },
+      {
+        name: "Manreet",
+      },
+      {
+        name: "Mouli Saraf ",
+      },
+      {
+        name: "Rakshit Joshi ",
+      },
+    ],
+    seniormembers: [
+      {
+        name: "Adarsh Gond",
+        image: Adarsh,
+      },
+    ],
+  },
+  {
     groupName: "Tech",
-    heads: [],
-    seniormembers: [],
+    heads: [
+      {
+        name: "Ashutosh",
+        image: Ashutosh,
+      },
+    ],
+    seniormembers: [
+      {
+        name: "Venkata Surya Sundar Vadali",
+        image: Venkarta,
+      },
+      {
+        name: "Sameer Yadav",
+        image: SameerYadav,
+      },
+      {
+        name: "Aryan Kumar Baghel",
+        image: AryanKumarBaghel,
+      },
+      {
+        name: "Anish Kumar ",
+        image: Anish,
+      },
+      {
+        name: "Pranjal Agrawal",
+        image: PranjalAgrawal,
+      },
+      {
+        name: "Sayyed Raahim Adnan Ali",
+        image: SayyedRaahimAdnan,
+      },
+      {
+        name: "Kushwaha",
+        image: Kushwaha,
+      },
+      {
+        name: "Kartik Pandey ",
+        image: Pandey,
+      },
+    ],
     members: [
       {
         name: "Srijan Kapoor ",
@@ -96,27 +234,88 @@ const teamData = [
     ],
   },
   {
-    groupName: "Website",
+    groupName: "Cultural",
     heads: [
       {
-        name: "Priyadarshi Satyakam",
-        image: priyadarshi,
+        name: "Soumya Dubey",
+        image: soumyaDubey,
       },
       {
-        name: "Yash Mohan Joshi",
-        image: yashJoshi,
+        name: "Divya Kumar Banjare",
+        image: divyaKumarBanjare,
       },
-    ],
-    seniormembers: [
-      { name: "Mohit Sharma", image: MohitSharma },
-      { name: "Alisha Tripathi", image: AlishaTripathi },
+      {
+        name: "Ojash Verma",
+        image: OjashVerma,
+      },
+      {
+        name: "Aseem Rai",
+        image: AssemRai,
+      },
     ],
     members: [
       {
-        name: "Manas Choudhary",
-        image: Manas,
+        name: "Dileep",
+      },
+      {
+        name: "Abhi Udai Singh",
+      },
+      {
+        name: "Hemangini ",
+      },
+      {
+        name: "Deeksha Netam ",
+      },
+      {
+        name: "Abhishek Agrawal",
+      },
+      {
+        name: "Arkapriya Das ",
+      },
+      {
+        name: "Abhineet Prakash Sagar",
+      },
+      {
+        name: "Avani Dewangan ",
       },
     ],
+    seniormembers: [
+      { name: "Keshavee Bisen", image: KeshaveeBisen },
+      { name: "Meenal", image: Meenal },
+      { name: "Sushil", image: Sushil },
+      { name: "Anshul Pratap Lakra", image: AnshulPratapLakra },
+      { name: "Jaiprakash Sahu", image: JaiprakashSahu },
+    ],
+  },
+  {
+    groupName: "Sports",
+    heads: [
+      {
+        name: "Ananya Rajawat",
+        image: AnanyaRajawat,
+      },
+    ],
+    members: [
+      {
+        name: "Akhil Nirala",
+      },
+      {
+        name: "Siddhant Netam Dhruv ",
+      },
+      {
+        name: "Malay Chaudhary ",
+      },
+      {
+        name: "Zaid",
+      },
+      {
+        name: "Anmol Singh ",
+      },
+      {
+        name: "Yadala srihari ",
+      },
+    ],
+    seniormembers: [],
   },
   {
     groupName: "Design",
@@ -187,182 +386,8 @@ const teamData = [
       {
         name: "Aayush Kulkarni",
         image: aayushKulkarni,
-      }
-    ],
-  },
-  {
-    groupName: "Marketing",
-    heads: [],
-    members: [
-      {
-        name: "Thomas Sajeev Varghese ",
-      },
-      {
-        name: "Tenneti Vineel Krishna ",
-      },
-      {
-        name: "Shashank Bhoi",
-      },
-      {
-        name: "Aayush Agrawal",
-      },
-      {
-        name: "Shikhar Varshney",
-      },
-      {
-        name: "Sumedha Chandak",
-      },
-      {
-        name: "Soumil Garg",
-      },
-      {
-        name: "Manreet",
-      },
-      {
-        name: "Mouli Saraf ",
-      },
-      {
-        name: "Rakshit Joshi ",
       },
     ],
-    seniormembers: [
-      {
-        name: "Adarsh Gond",
-        image: Adarsh,
-      },
-    ],
-  },
-  {
-    groupName: "Sponsorship",
-    heads: [
-      {
-        name: "Aayush Kulkarni",
-        image: aayushKulkarni,
-      },
-    ],
-    members: [
-      {
-        name: "Aakansha verma",
-      },
-      {
-        name: "Pranjali upadhyay",
-      },
-      {
-        name: "Punyansh thakur",
-      },
-      {
-        name: "Tushar darsena",
-      },
-      {
-        name: "Ananya R Nair",
-      },
-      {
-        name: "Kshitij Jain",
-      },
-      {
-        name: "Darshna Sharma",
-      },
-      {
-        name: "Shivam Tiwari",
-      },
-      {
-        name: "Prakriti Thakur",
-      },
-    ],
-    seniormembers: [
-      {
-        name: "Virat Patel",
-        image: ViratPatel,
-      },
-      {
-        name: "Neeraj Netam",
-        image: NeerajNetam,
-      },
-    ],
-  },
-  {
-    groupName: "Cultural",
-    heads: [
-      {
-        name: "Soumya Dubey",
-        image: soumyaDubey,
-      },
-      {
-        name: "Divya Kumar Banjare",
-        image: divyaKumarBanjare,
-      },
-      {
-        name: "Ojash Verma",
-        image: OjashVerma,
-      },
-      {
-        name: "Aseem Rai",
-        image: AssemRai,
-      },
-    ],
-    members: [
-      {
-        name: "Dileep",
-      },
-      {
-        name: "Abhi Udai Singh",
-      },
-      {
-        name: "Hemangini ",
-      },
-      {
-        name: "Deeksha Netam ",
-      },
-      {
-        name: "Abhishek Agrawal",
-      },
-      {
-        name: "Arkapriya Das ",
-      },
-      {
-        name: "Abhineet Prakash Sagar",
-      },
-      {
-        name: "Avani Dewangan ",
-      },
-    ],
-    seniormembers: [
-      { name: "Keshavee Bisen", image: KeshaveeBisen },
-      { name: "Meenal", image: Meenal },
-      { name: "Sushil", image: Sushil },
-      { name: "Anshul Pratap Lakra", image: "" },
-      { name: "Jaiprakash Sahu", image: JaiprakashSahu },
-    ],
-  },
-  {
-    groupName: "Sports",
-    heads: [
-      {
-        name: "Ananya Rajawat",
-        image: AnanyaRajawat,
-      },
-    ],
-    members: [
-      {
-        name: "Akhil Nirala",
-      },
-      {
-        name: "Siddhant Netam Dhruv ",
-      },
-      {
-        name: "Malay Chaudhary ",
-      },
-      {
-        name: "Zaid",
-      },
-      {
-        name: "Anmol Singh ",
-      },
-      {
-        name: "Yadala srihari ",
-      },
-    ],
-    seniormembers: [],
   },
   {
     groupName: "Video Editing",
@@ -438,7 +463,6 @@ const teamData = [
       { name: "Vansh Goel", image: vanshgoel },
       { name: "Naman Garg", image: namangarg },
       { name: "Himanshu Singh Kotharia", image: himanshukothari },
-      { name: "Saurabh Dixit", image: saurabhdixit },
     ],
   },
   {
@@ -458,6 +482,29 @@ const teamData = [
       { name: "Meenal", image: Meenal },
       { name: "Shreyash Keshari" },
       { name: "Harsh Shrivastava " },
+    ],
+  },
+  {
+    groupName: "Website",
+    heads: [
+      {
+        name: "Priyadarshi Satyakam",
+        image: priyadarshi,
+      },
+      {
+        name: "Yash Mohan Joshi",
+        image: yashJoshi,
+      },
+    ],
+    seniormembers: [
+      { name: "Mohit Sharma", image: MohitSharma },
+      { name: "Alisha Tripathi", image: AlishaTripathi },
+    ],
+    members: [
+      {
+        name: "Manas Choudhary",
+        image: Manas,
+      },
     ],
   },
 ];
