@@ -59,7 +59,7 @@ const router = createBrowserRouter([
         path: '/team',
         element: (
             <>
-                <NavBar />
+                {/* <NavBar /> */}
                 <AudioPlayer />
                 <Team />
             </>

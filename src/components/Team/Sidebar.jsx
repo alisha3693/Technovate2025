@@ -25,11 +25,12 @@ const teams = [
   'Cultural',
   'Sports',
   'Design',
+  'Website',
   'Documentation',
   'Video Editing',
   'Logistics & Hospitality',
   'Comic Con',
-  'Website',
+
 ];
 
 function ResponsiveDrawers(props) {

@@ -357,6 +357,30 @@ const teamData = [
     ],
     seniormembers: [{ name: "Aanchal Rajawat", image: AanchalRajawat }],
   },
+
+  {
+    groupName: "Website",
+    heads: [
+      {
+        name: "Priyadarshi Satyakam",
+        image: priyadarshi,
+      },
+      {
+        name: "Yash Mohan Joshi",
+        image: yashJoshi,
+      },
+    ],
+    seniormembers: [
+      { name: "Mohit Sharma", image: MohitSharma },
+      { name: "Alisha Tripathi", image: AlishaTripathi },
+    ],
+    members: [
+      {
+        name: "Manas Choudhary",
+        image: Manas,
+      },
+    ],
+  },
   {
     groupName: "Documentation",
     heads: [
@@ -473,12 +497,12 @@ const teamData = [
     groupName: "Comic Con",
     heads: [
       {
-        name: "Ojas Verma",
-        image: modhkaif,
+        name: "Ojash Verma",
+        image: OjashVerma,
       },
       {
-        name: "Aseem rai",
-        image: saurabhdixit,
+        name: "Aseem Rai",
+        image: AssemRai,
       },
     ],
     members: [],
@@ -488,29 +512,7 @@ const teamData = [
       { name: "Harsh Shrivastava " },
     ],
   },
-  {
-    groupName: "Website",
-    heads: [
-      {
-        name: "Priyadarshi Satyakam",
-        image: priyadarshi,
-      },
-      {
-        name: "Yash Mohan Joshi",
-        image: yashJoshi,
-      },
-    ],
-    seniormembers: [
-      { name: "Mohit Sharma", image: MohitSharma },
-      { name: "Alisha Tripathi", image: AlishaTripathi },
-    ],
-    members: [
-      {
-        name: "Manas Choudhary",
-        image: Manas,
-      },
-    ],
-  },
+ 
 ];
 
 export default teamData;
