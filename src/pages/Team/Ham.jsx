@@ -84,7 +84,7 @@ export default function NavBar() {
         }}
       >
         <Toolbar>
-          <IconButton
+          {/* <IconButton
             size="large"
             edge="start"
             color="inherit"
@@ -137,8 +137,28 @@ export default function NavBar() {
             </MenuItem> */}
             {/* <MenuItem onClick={handleScheduleClick} sx={navMenuStyle}>
               Schedule
-            </MenuItem> */}
-          </Menu>
+            </MenuItem> 
+          </Menu> */}
+
+            <Typography
+            sx={{
+              marginRight: 'auto',
+              color: 'white',
+              fontFamily: 'technovate',
+              fontWeight: '900',
+              zIndex: 1301,
+              backgroundColor: 'transparent',
+              textShadow: '0px 1px 2px rgba(0, 0, 0, 0.5)',
+              cursor: 'pointer',
+                '&:hover': {
+                color: '#FFD700', 
+                textShadow: '0px 2px 4px rgba(255, 0, 0, 0.7)', // Glowing effect
+                }
+    
+            }}
+          onClick={handleHomeClick}>
+            HOME
+          </Typography>
 
           <Typography
             sx={{
@@ -149,6 +169,13 @@ export default function NavBar() {
               zIndex: 1301,
               backgroundColor: 'transparent',
               textShadow: '0px 1px 2px rgba(0, 0, 0, 0.5)',
+              cursor: 'pointer',
+                '&:hover': {
+                color: '#FFD700', 
+                textShadow: '0px 2px 4px rgba(255, 0, 0, 0.7)', // Glowing effect
+                }
+    
+            
             }}
           onClick={handleContact}>
             CONTACT

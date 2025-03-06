@@ -2,12 +2,14 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import "./HeroSection.css";
+import { ToastContainer, toast } from 'react-toastify';
 
 export default function HeroSection() {
   const transitionRef = useRef(null);
   const textBoxRef = useRef(null);
   const svgRef = useRef(null);
   const heroSectionRef = useRef(null);
+  const notify = () => toast('Passes are out for sale!!!');
 
   useEffect(() => {
     // Text animation
@@ -32,6 +34,7 @@ export default function HeroSection() {
       repeat: -1,
       yoyo: true,
     });
+    notify();
   }, []);
 
   return (
@@ -58,7 +61,8 @@ export default function HeroSection() {
       <div className="hero-section-text-box" ref={textBoxRef}>
         <div className="hero-section-text">
           <div>TECHNOVATE 6.0</div>
-          <span className="coming-soon-text">COMING SOON</span>
+          <span className="coming-soon-text">MARCH 21-23</span>
+          <button>Get your passes now</button>
         </div>
         <div className="hero-section-svg">
           <svg
@@ -87,6 +91,8 @@ export default function HeroSection() {
     <polyline points="6 9 12 15 18 9"></polyline>
   </svg>
 </div>
+<ToastContainer position="bottom-right"
+theme="light"/>
     </div>
   );
 }
