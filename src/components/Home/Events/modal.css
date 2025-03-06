@@ -30,7 +30,7 @@
 
 .modal-content-boxes {
     display: grid;
-    grid-template-columns: repeat(3, minmax(120px, 1fr)); /* Adjust columns */
+    grid-template-columns: repeat(4, minmax(120px, 1fr)); /* Adjust columns */
     gap: 10px;
     justify-content: center;
     align-items: center;
