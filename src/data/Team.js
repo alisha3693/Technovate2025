@@ -11,7 +11,6 @@ import SatvikYadav from "../assets/Team/Coordinator/SatvikYadav.jpg";
 //sponsorship
 import aayushKulkarni from "../assets/Team/Sponsorship/aayushkulkarni.jpg";
 import NeerajNetam from "../assets/Team/Sponsorship/NeerajNetam.jpg";
-import ViratPatel from "../assets/Team/Sponsorship/ViratPatel.jpg";
 
 //Tech
 import Ashutosh from "../assets/Team/Tech/Ashutosh.jpeg";
@@ -30,7 +29,7 @@ import divyaKumarBanjare from "../assets/Team/Cultural/divyakumarbanjare.png";
 import JaiprakashSahu from "../assets/Team/Cultural/JaiprakashSahu.jpeg";
 import KeshaveeBisen from "../assets/Team/Cultural/KeshaveeBisen.jpg";
 import Meenal from "../assets/Team/Cultural/MeenalPatle.jpg";
-import OjashVerma from "../assets/Team/Cultural/OjashVerma.jpg";
+import OjashVerma from "../assets/Team/Cultural/OjashVerma2.jpg";
 import soumyaDubey from "../assets/Team/Cultural/soumyadubey.jpg";
 import Sushil from "../assets/Team/Cultural/Sushil.jpg";
 import AnshulPratapLakra from "../assets/Team/Cultural/AnshulPratapLakra.jpeg";
@@ -92,6 +91,10 @@ const teamData = [
         name: "Satvik Yadav",
         image: SatvikYadav,
       },
+      {
+        name: "Yash Raj",
+        image: Yash_Raj,
+      },
     ],
   },
   {
@@ -100,6 +103,10 @@ const teamData = [
       {
         name: "Aayush Kulkarni",
         image: aayushKulkarni,
+      },
+      {
+        name: "Akshat Shree Mishra",
+        image: akshatShreeMishra,
       },
     ],
     members: [
@@ -145,6 +152,14 @@ const teamData = [
         name: "priyanshu ",
         image: priyanshusriv,
       },
+      {
+        name: "Debashish",
+        image: DebashishPadhy,
+      },
+      {
+        name: "Yash Raj",
+        image: Yash_Raj,
+      },
     ],
     members: [
       {
@@ -183,6 +198,10 @@ const teamData = [
         name: "Adarsh Gond",
         image: Adarsh,
       },
+      {
+        name: "Neeraj",
+        image: NeerajNetam,
+      },
     ],
   },
   {
@@ -191,6 +210,10 @@ const teamData = [
       {
         name: "Ashutosh",
         image: Ashutosh,
+      },
+      {
+        name: "Ayush Yadav",
+        image: AyushYadav,
       },
     ],
     seniormembers: [
@@ -285,6 +308,8 @@ const teamData = [
       { name: "Sushil", image: Sushil },
       { name: "Anshul Pratap Lakra", image: AnshulPratapLakra },
       { name: "Jaiprakash Sahu", image: JaiprakashSahu },
+      { name: "Alisha Tripathi", image: AlishaTripathi },
+      { name: "Priyadarshi ", image: priyadarshi },
     ],
   },
   {
@@ -295,8 +320,7 @@ const teamData = [
         image: AnanyaRajawat,
       },
       {
-        name: "Yash Raj",
-        image: Yash_Raj,
+        name: "Arnav Pandey",
       },
     ],
     members: [
@@ -355,7 +379,12 @@ const teamData = [
         name: "Tarun Bhagat",
       },
     ],
-    seniormembers: [{ name: "Aanchal Rajawat", image: AanchalRajawat }],
+    seniormembers: [
+      { name: "Aanchal Rajawat", image: AanchalRajawat },
+      { name: "Uttam" },
+      { name: "Ashrita " },
+      { name: "parth patel" },
+    ],
   },
   {
     groupName: "Documentation",
@@ -386,12 +415,7 @@ const teamData = [
         name: "P.Stuti Keerthana  ",
       },
     ],
-    seniormembers: [
-      {
-        name: "Aayush Kulkarni",
-        image: aayushKulkarni,
-      },
-    ],
+    seniormembers: [],
   },
   {
     groupName: "Video Editing",
