@@ -1,7 +1,8 @@
 //okay
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef , useState } from "react";
 import { gsap } from "gsap";
 import "./HeroSection.css";
+import HeroModal from './heromodal'
 import { ToastContainer, toast } from 'react-toastify';
 
 export default function HeroSection() {
@@ -9,7 +10,18 @@ export default function HeroSection() {
   const textBoxRef = useRef(null);
   const svgRef = useRef(null);
   const heroSectionRef = useRef(null);
+  const [modalOpen , setModalOpen] = useState(false);
   const notify = () => toast('Passes are out for sale!!!');
+
+
+  const handleOpen = ()=>{
+    setModalOpen(true);
+  }
+
+
+  const handleClose = ()=>{
+    
+  }
 
   useEffect(() => {
     // Text animation
@@ -62,7 +74,7 @@ export default function HeroSection() {
         <div className="hero-section-text">
           <div>TECHNOVATE 6.0</div>
           <span className="coming-soon-text">MARCH 21-23</span>
-          <button>Get your passes now</button>
+          <button onClick={handleOpen}>Get your passes now</button>
         </div>
         <div className="hero-section-svg">
           <svg
@@ -92,7 +104,9 @@ export default function HeroSection() {
   </svg>
 </div>
 <ToastContainer position="bottom-right"
+autoClose={10000}
 theme="light"/>
+{modalOpen && <HeroModal setModalOpen={setModalOpen}/>}
     </div>
   );
 }
