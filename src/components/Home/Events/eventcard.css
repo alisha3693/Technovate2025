@@ -17,11 +17,14 @@
     width:30%;
     height: 70%;
     opacity:0.9;
+    transition: transform 0.3s ease , box-shadow 0.3s ease;
 }
 
 .main-div:hover{
     background-color:rgba(161, 105, 233, 0.81) ;
     cursor:pointer;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -37,7 +40,7 @@
 
 }
 
-.image-div{
+.inside-div > .image-div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,10 +53,14 @@
     height:100%;
 }
 
+.text-div{
+    height:30%
+}
+
 
 
 .text-div > p{
-    margin-top:90px;
+    margin-top:10px;
     display: flex;
     font-family: CounterStreamDemoRegular;
     font-size: 4vh;

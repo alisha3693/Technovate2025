@@ -5,9 +5,9 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import React, { useState , useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Navbar.css'; // Import the CSS file
+
 
 export default function NavBar() {
   const navMenuStyle = {
@@ -25,20 +25,6 @@ export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false); // State to track menu open/close
   const open = Boolean(anchorEl);
   const navigate = useNavigate(); // Initialize navigate
-  const [screenSize , setScreenSize] = useState(window.innerWidth);
-  const [showMenu , setShowMenu] = useState(false)
-
-  useEffect(() => {
-    const handleResize = () => {
-      setScreenSize(window.innerWidth);
-      setShowMenu(window.innerWidth < 1000);
-    };
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
 
   const handleMenuClick = (event) => {
     setAnchorEl(open ? null : event.currentTarget); // Toggle menu open/close
@@ -90,15 +76,15 @@ export default function NavBar() {
           boxShadow: '0 4px 10px rgba(0, 0, 0, 0.8)',
           backdropFilter: 'blur(12px)',
           WebkitBackdropFilter: 'blur(6px)',
-          width: '95%',
-          top: '40px',
-          left: '50%',
+          width: {lg : '65%' , md:'60%' , sm:'80%'},
+          top: '20px',
+          left: {lg:'60%', md:'60%' , sm:'50%' , xs:'50%'},
           transform: 'translateX(-50%)',
           zIndex: 1301,
         }}
       >
         <Toolbar>
-          {showMenu && <><IconButton
+          {/* <IconButton
             size="large"
             edge="start"
             color="inherit"
@@ -128,8 +114,8 @@ export default function NavBar() {
                 />
               </svg>
             </button>
-          </IconButton> 
-           <Menu
+          </IconButton>
+          <Menu
             anchorEl={anchorEl}
             open={open}
             onClose={handleMenuClose}
@@ -151,12 +137,12 @@ export default function NavBar() {
             </MenuItem> */}
             {/* <MenuItem onClick={handleScheduleClick} sx={navMenuStyle}>
               Schedule
-            </MenuItem> */}
-          </Menu> </> }
-          {!showMenu && <div className='Nav-bar-options'>
-          <Typography
+            </MenuItem> 
+          </Menu> */}
+
+            <Typography
             sx={{
-              
+              marginRight: 'auto',
               color: 'white',
               fontFamily: 'technovate',
               fontWeight: '900',
@@ -168,46 +154,11 @@ export default function NavBar() {
                 color: '#FFD700', 
                 textShadow: '0px 2px 4px rgba(255, 0, 0, 0.7)', // Glowing effect
                 }
+    
             }}
           onClick={handleHomeClick}>
-            Home
+            HOME
           </Typography>
-          <Typography
-            sx={{
-              
-              color: 'white',
-              fontFamily: 'technovate',
-              fontWeight: '900',
-              zIndex: 1301,
-              backgroundColor: 'transparent',
-              textShadow: '0px 1px 2px rgba(0, 0, 0, 0.5)',
-              cursor: 'pointer',
-                '&:hover': {
-                color: '#FFD700', 
-                textShadow: '0px 2px 4px rgba(255, 0, 0, 0.7)', // Glowing effect
-                }
-            }}
-          onClick={handleEventClick}>
-            Events
-          </Typography><Typography
-            sx={{
-             
-              color: 'white',
-              fontFamily: 'technovate',
-              fontWeight: '900',
-              zIndex: 1301,
-              backgroundColor: 'transparent',
-              textShadow: '0px 1px 2px rgba(0, 0, 0, 0.5)',
-              cursor: 'pointer',
-                '&:hover': {
-                color: '#FFD700', 
-                textShadow: '0px 2px 4px rgba(255, 0, 0, 0.7)', // Glowing effect
-                }
-            }}
-          onClick={handleTeamClick}>
-            Team
-          </Typography>
-          </div> }
 
           <Typography
             sx={{
@@ -223,6 +174,8 @@ export default function NavBar() {
                 color: '#FFD700', 
                 textShadow: '0px 2px 4px rgba(255, 0, 0, 0.7)', // Glowing effect
                 }
+    
+            
             }}
           onClick={handleContact}>
             CONTACT

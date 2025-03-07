@@ -2,7 +2,7 @@ import priyadarshi from "../assets/Team/Website/priyadarshi.jpg";
 import yashJoshi from "../assets/Team/Website/yashjoshi.jpg";
 //Overall Coordinators
 
-import akshatShreeMishra from "../assets/Team/Coordinator/akshatShreeMishra.jpeg";
+import akshatShreeMishra from "../assets/Team/Coordinator/AkshatShreeMishra.jpeg";
 import AkshatSrivastava from "../assets/Team/Coordinator/AkshatSrivastava.jpeg";
 import AyushYadav from "../assets/Team/Coordinator/AyushYadav.jpeg";
 import DebashishPadhy from "../assets/Team/Coordinator/DebashishPadhy.jpeg";
@@ -386,6 +386,30 @@ const teamData = [
       { name: "parth patel" },
     ],
   },
+
+  {
+    groupName: "Website",
+    heads: [
+      {
+        name: "Priyadarshi Satyakam",
+        image: priyadarshi,
+      },
+      {
+        name: "Yash Mohan Joshi",
+        image: yashJoshi,
+      },
+    ],
+    seniormembers: [
+      { name: "Mohit Sharma", image: MohitSharma },
+      { name: "Alisha Tripathi", image: AlishaTripathi },
+    ],
+    members: [
+      {
+        name: "Manas Choudhary",
+        image: Manas,
+      },
+    ],
+  },
   {
     groupName: "Documentation",
     heads: [
@@ -497,12 +521,12 @@ const teamData = [
     groupName: "Comic Con",
     heads: [
       {
-        name: "Ojas Verma",
-        image: modhkaif,
+        name: "Ojash Verma",
+        image: OjashVerma,
       },
       {
-        name: "Aseem rai",
-        image: saurabhdixit,
+        name: "Aseem Rai",
+        image: AssemRai,
       },
     ],
     members: [],
@@ -512,29 +536,7 @@ const teamData = [
       { name: "Harsh Shrivastava " },
     ],
   },
-  {
-    groupName: "Website",
-    heads: [
-      {
-        name: "Priyadarshi Satyakam",
-        image: priyadarshi,
-      },
-      {
-        name: "Yash Mohan Joshi",
-        image: yashJoshi,
-      },
-    ],
-    seniormembers: [
-      { name: "Mohit Sharma", image: MohitSharma },
-      { name: "Alisha Tripathi", image: AlishaTripathi },
-    ],
-    members: [
-      {
-        name: "Manas Choudhary",
-        image: Manas,
-      },
-    ],
-  },
+ 
 ];
 
 export default teamData;

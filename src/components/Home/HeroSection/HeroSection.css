@@ -35,6 +35,21 @@
   flex-direction: column;
   justify-content: right;
 }
+.hero-section-text button{
+  font-family: technovate;
+  font-weight: 600;
+  font-size:14px;
+  background-color:rgba(255, 255, 255,0.7);
+  color: black;
+}
+
+.hero-section-text button:hover {
+  transform: scale(1.05); 
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease; 
+  background-color: #f0f0f0; 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
 
 .hero-section-text span {
   text-align: right;

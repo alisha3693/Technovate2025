@@ -7,6 +7,13 @@
     padding: 0;
   }
 
+  .Nav-bar-options{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: space-around;
+  }
+
   .line {
     fill: none;
     stroke: white; /* Change line color to white */

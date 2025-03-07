@@ -4,6 +4,7 @@ import BG from '../../assets/Images/Bg/TeamPageBG.png';
 import teamData from "../../data/Team";
 import ResponsiveDrawer from "../../components/Team/Sidebar";
 import TeamSection from "../../components/Team/TeamSection";
+import Ham from "./Ham"
 
 export default function Team() {
   return (
@@ -11,6 +12,7 @@ export default function Team() {
       <img src={BG} alt="Background" className="team-page-img" />
       <ResponsiveDrawer />
       <div className="team-content">
+        <Ham/>
         <TeamSection />
       </div>
     </div>
