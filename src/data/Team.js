@@ -34,6 +34,8 @@ import soumyaDubey from "../assets/Team/Cultural/soumyadubey.jpg";
 import Sushil from "../assets/Team/Cultural/Sushil.jpg";
 import AnshulPratapLakra from "../assets/Team/Cultural/AnshulPratapLakra.jpeg";
 import ShreyashKeshar from "../assets/Team/Cultural/ShreyashKeshari.png";
+import HarshShrivastava from "../assets/Team/Cultural/HarshShrivastava.png";
+
 //Design
 import AanchalRajawat from "../assets/Team/Design/Aaanchal.png";
 import Shivani from "../assets/Team/Design/RSaiShivani.jpeg";
@@ -536,7 +538,7 @@ const teamData = [
     seniormembers: [
       { name: "Meenal", image: Meenal },
       { name: "Shreyash Keshari", image: ShreyashKeshar },
-      { name: "Harsh Shrivastava " },
+      { name: "Harsh Shrivastava ", image: HarshShrivastava },
     ],
   },
 ];
