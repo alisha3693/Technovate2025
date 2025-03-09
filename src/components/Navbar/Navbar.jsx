@@ -5,7 +5,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import React, { useState , useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Navbar.css'; // Import the CSS file
 
@@ -60,10 +60,10 @@ export default function NavBar() {
     handleMenuClose();
   };
 
-  // const handleSponsorClick = () => {
-  //   navigate('/sponsors');
-  //   handleMenuClose();
-  // }
+  const handleSponsorClick = () => {
+    navigate('/sponsors');
+    handleMenuClose();
+  }
 
   
   const handleEventClick = () => {
@@ -189,7 +189,26 @@ export default function NavBar() {
             }}
           onClick={handleEventClick}>
             Events
-          </Typography><Typography
+          </Typography>
+          {/* <Typography
+            sx={{
+              
+              color: 'white',
+              fontFamily: 'technovate',
+              fontWeight: '900',
+              zIndex: 1301,
+              backgroundColor: 'transparent',
+              textShadow: '0px 1px 2px rgba(0, 0, 0, 0.5)',
+              cursor: 'pointer',
+                '&:hover': {
+                color: '#FFD700', 
+                textShadow: '0px 2px 4px rgba(255, 0, 0, 0.7)', // Glowing effect
+                }
+            }}
+          onClick={handleSponsorClick}>
+            Sponsor */}
+          {/* </Typography> */}
+          <Typography
             sx={{
              
               color: 'white',

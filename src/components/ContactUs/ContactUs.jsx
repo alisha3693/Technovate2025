@@ -1,10 +1,10 @@
-import React from 'react';
-import './ContactUs.css';
+import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import XIcon from '@mui/icons-material/X';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import XIcon from '@mui/icons-material/X';
+import React from 'react';
+import './ContactUs.css';
 
 const ContactUs = () => {
   return (
@@ -17,7 +17,7 @@ const ContactUs = () => {
         <a href="https://www.linkedin.com/company/technovate_iiitnr/posts/?feedView=all" target="_main">
           <LinkedInIcon fontSize="large" style={{ color: 'rgb(187, 0, 255)' }} />
         </a>
-        <a href="https://facebook.com" target="_main">
+        <a href="https://www.facebook.com/technovate.iiitnr" target="_main">
           <FacebookIcon fontSize="large" style={{ color: 'rgb(187, 0, 255)' }} />
         </a>
         <a href="https://x.com/technovateiiit" target="_main">
@@ -44,9 +44,12 @@ const ContactUs = () => {
           <a href="/team">
             <p className="quick-links">Team</p>
           </a>
-          <a href="/schedule">
+          {/* <a href="/schedule">
             <p className="quick-links">Schedule</p>
           </a>
+          <a href="/sponsors">
+            <p className="quick-links">Sponsor</p>
+          </a> */}
         </div>
         <div className="contact-us-item">
           <h2>Address</h2>
