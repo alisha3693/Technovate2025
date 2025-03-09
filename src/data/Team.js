@@ -35,6 +35,7 @@ import Sushil from "../assets/Team/Cultural/Sushil.jpg";
 import AnshulPratapLakra from "../assets/Team/Cultural/AnshulPratapLakra.jpeg";
 import ShreyashKeshar from "../assets/Team/Cultural/ShreyashKeshari.png";
 import HarshShrivastava from "../assets/Team/Cultural/HarshShrivastava.png";
+import arnavpandey from "../assets/Team/Cultural/arnavpandey.jpg";
 
 //Design
 import AanchalRajawat from "../assets/Team/Design/Aaanchal.png";
@@ -326,6 +327,7 @@ const teamData = [
       },
       {
         name: "Arnav Pandey",
+        image: arnavpandey,
       },
     ],
     members: [
