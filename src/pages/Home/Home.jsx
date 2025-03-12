@@ -14,6 +14,8 @@ import EventText from '../../components/Home/Events/event_text'
 export default function Home() {
   const [scrollProgress, setScrollProgress] = useState(0);
 
+
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = document.documentElement.scrollTop;

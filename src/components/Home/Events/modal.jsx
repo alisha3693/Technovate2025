@@ -17,7 +17,7 @@ const EventModal = ({title , modal_text, setIsOpen}) => {
     <div className="main-modal">
      
         <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content">
+          <div className="modal-content"onClick={(e) => e.stopPropagation()}>
             <div className="modal-content-nav">
               <h1>{title}</h1>
             <button onClick={closeModal}><span>X</span></button>
