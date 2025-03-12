@@ -24,6 +24,16 @@ const router = createBrowserRouter([
             </>
         ),
     },
+
+    {
+        path:'/passes',
+        element :(
+            <>
+            <Home/>
+            </>
+        )
+    },
+
     {
         path: '/Schedule',
         element: (

@@ -4,6 +4,7 @@ import { gsap } from "gsap";
 import "./HeroSection.css";
 import HeroModal from './heromodal'
 import { ToastContainer, toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
 export default function HeroSection() {
   const transitionRef = useRef(null);
@@ -12,16 +13,14 @@ export default function HeroSection() {
   const heroSectionRef = useRef(null);
   const [modalOpen , setModalOpen] = useState(false);
   const notify = () => toast('Passes are out for sale!!!');
+  const navigate = useNavigate();
 
 
   const handleOpen = ()=>{
     setModalOpen(true);
+    // navigate('/passes')
   }
 
-
-  const handleClose = ()=>{
-    
-  }
 
   useEffect(() => {
     // Text animation

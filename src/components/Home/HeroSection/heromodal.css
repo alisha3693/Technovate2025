@@ -9,16 +9,31 @@
 }
 
 .modal-main-div{
-    background-color: rgba(255,255,255,0.3);
-    height:60vh;
+    background-color: rgba(255,255,255,0.6);
+    margin-top:60px;
+    height:min-content;
     width:60%;
     border-radius:15px;
     border-width:2px;
     border-color: white;
+    justify-content: space-evenly;
     display: flex;
     flex-direction: column;
 }
+.modal-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
 
+.modal-info > p {
+    height: max-content;
+    margin:5px;
+}
+
+.modal-info > p > a:hover{
+    color: red;
+}
 
 .modal-nav{
     margin-top:10px;
@@ -90,26 +105,36 @@ svg{
 
 
 
+
 @media only screen and (max-width:800px){
 
     .modal-main-div{
         width:80%;
-        height:70vh;
+        height:80vh;
+        display: block;
+        min-height: fit-content;
     }
     .modal-card-div{
         flex-direction: column;
+        /* justify-content: start; */
+        height:40vh;
+        padding: none;
         margin:2px;
+    }
+
+    .modal-info{
+        margin-top:40px;
     }
     .modal-nav > button{
         margin-right:10px;
     }
 
     .modal-card{
-        height:40%;
+        height:50%;
         width:50%;
     }
     .modal-card > p{
-        font-size:10px;
+        font-size:15px;
     }
 
     .modal-nav > span{

@@ -43,6 +43,8 @@ import Shivani from "../assets/Team/Design/RSaiShivani.jpeg";
 import Uttam from "../assets/Team/Design/Uttam.jpg";
 import Ashrita from "../assets/Team/Design/Ashrita.jpg";
 import aanchal from "../assets/Team/Design/Aanchal.jpg";
+import hritik from "../assets/Team/Design/hritik.jpg";
+import parth from "../assets/Team/Design/parth.jpg";
 
 //Documentation
 import KanikaMalhotra from "../assets/Team/Documentation/KanikaMalhotra.jpg";
@@ -385,12 +387,17 @@ const teamData = [
       {
         name: "Tarun Bhagat",
       },
+      {
+        name : "Anushka Anil"
+
+      },
     ],
     seniormembers: [
       { name: "Aanchal Rajawat", image: AanchalRajawat },
       { name: "Uttam", image: Uttam },
       { name: "Ashrita ", image: Ashrita },
-      { name: "parth patel" },
+      { name: "Parth Patel" , image:parth},
+      { name: "Hritik Routia" , image:hritik},
     ],
   },
 
