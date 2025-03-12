@@ -38,11 +38,11 @@ import HarshShrivastava from "../assets/Team/Cultural/HarshShrivastava.png";
 import arnavpandey from "../assets/Team/Cultural/arnavpandey.jpg";
 
 //Design
-import AanchalRajawat from "../assets/Team/Design/Aaanchal.png";
+import AanchalRajawat from "../assets/Team/Design/aanchal.jpg";
 import Shivani from "../assets/Team/Design/RSaiShivani.jpeg";
-import Uttam from "../assets/Team/Design/Uttam.jpg";
-import Ashrita from "../assets/Team/Design/Ashrita.jpg";
-import aanchal from "../assets/Team/Design/Aanchal.jpg";
+import Uttam from "../assets/Team/Design/uttam.jpg";
+import Ashrita from "../assets/Team/Design/ashrita.jpg";
+import aanchal from "../assets/Team/Design/aanchal.jpg";
 import hritik from "../assets/Team/Design/hritik.jpg";
 import parth from "../assets/Team/Design/parth.jpg";
 
