@@ -33,10 +33,16 @@ import OjashVerma from "../assets/Team/Cultural/OjashVerma2.jpg";
 import soumyaDubey from "../assets/Team/Cultural/soumyadubey.jpg";
 import Sushil from "../assets/Team/Cultural/Sushil.jpg";
 import AnshulPratapLakra from "../assets/Team/Cultural/AnshulPratapLakra.jpeg";
+import ShreyashKeshar from "../assets/Team/Cultural/ShreyashKeshari.png";
+import HarshShrivastava from "../assets/Team/Cultural/HarshShrivastava.png";
+import arnavpandey from "../assets/Team/Cultural/arnavpandey.jpg";
 
 //Design
 import AanchalRajawat from "../assets/Team/Design/Aaanchal.png";
 import Shivani from "../assets/Team/Design/RSaiShivani.jpeg";
+import Uttam from "../assets/Team/Design/Uttam.jpg";
+import Ashrita from "../assets/Team/Design/Ashrita.jpg";
+import aanchal from "../assets/Team/Design/Aanchal.jpg";
 
 //Documentation
 import KanikaMalhotra from "../assets/Team/Documentation/KanikaMalhotra.jpg";
@@ -321,6 +327,7 @@ const teamData = [
       },
       {
         name: "Arnav Pandey",
+        image: arnavpandey,
       },
     ],
     members: [
@@ -381,8 +388,8 @@ const teamData = [
     ],
     seniormembers: [
       { name: "Aanchal Rajawat", image: AanchalRajawat },
-      { name: "Uttam" },
-      { name: "Ashrita " },
+      { name: "Uttam", image: Uttam },
+      { name: "Ashrita ", image: Ashrita },
       { name: "parth patel" },
     ],
   },
@@ -532,11 +539,10 @@ const teamData = [
     members: [],
     seniormembers: [
       { name: "Meenal", image: Meenal },
-      { name: "Shreyash Keshari" },
-      { name: "Harsh Shrivastava " },
+      { name: "Shreyash Keshari", image: ShreyashKeshar },
+      { name: "Harsh Shrivastava ", image: HarshShrivastava },
     ],
   },
- 
 ];
 
 export default teamData;
