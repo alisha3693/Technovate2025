@@ -489,6 +489,9 @@ const teamData = [
       {
         name: "Om singh ",
       },
+      {
+        name: "Himanshu",
+      }
     ],
     seniormembers: [],
   },
