@@ -54,9 +54,9 @@
 .modal-nav > button{
     margin-left:auto;
     background-color: transparent;
-    height:100%;
+   
     width:7%;
-    font-size:30px;
+    font-size:1rem;
 }
 
 .modal-nav > button:hover{
@@ -175,6 +175,13 @@ svg{
     .modal-info{
         margin-top:40px;
     }
+    .modal-nav > span{
+        font-size: 1rem;
+    }
+
+    .modal-nav{
+        height: 20px;
+    }
     .modal-nav > button{
         margin-right:10px;
     }
@@ -195,17 +202,17 @@ svg{
 
     .modal-contact-info {
         padding: 15px;
-        margin: 10px;
-        height:140px;
+        margin: 1px;
+        height:120px;
     }
 
     .contact-title {
-        font-size: 1rem;
-        margin-bottom: 10px;
+        font-size: 0.7rem;
+        margin-bottom: 5px;
     }
 
     .contact-item p {
-        font-size: 14px;
+        font-size: 10px;
     }
 
     .contact-list {
