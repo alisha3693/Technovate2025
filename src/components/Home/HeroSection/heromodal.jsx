@@ -21,6 +21,20 @@ export default function HeroModal({setModalOpen}){
                         <span>Buy Passes</span>
                         <button onClick={handleClose}>X</button>
                     </div>
+                    <div className='modal-contact-info'>
+                        <h3 className='contact-title'>For Bulk Passes Contact</h3>
+                        <div className='contact-list'>
+                            <div className='contact-item'>
+                                <p>Priyanshu Shrivastava: <a href="https://wa.me/+919935062012" target='_blank'>+91 99350 62012</a></p>
+                            </div>
+                            <div className='contact-item'>
+                                <p>Yash Raj: <a href="https://wa.me/+916203763329" target='_blank'>+91 62037 63329</a></p>
+                            </div>
+                            <div className='contact-item'>
+                                <p>Debashish Padhy: <a href="https://wa.me/+918374344812" target='_blank'>+91 83743 44812</a></p>
+                            </div>
+                        </div>
+                    </div>
                     <hr/>
                     <div className='modal-card-div'>
                         <div className='modal-card' style={{backgroundColor:"rgba(252, 229, 102, 0.8)"}}  onClick={()=>handleRedirect('https://rzp.io/rzp/execpass')}>
@@ -58,8 +72,9 @@ export default function HeroModal({setModalOpen}){
                 </div>
             </div>
             <div className='modal-info'>
-                <p>For accomodation contact our Hospitality Team : <strong>Mohd Kaif : <a href="https://wa.me/+918449194200" target="_blank">+91 84491 94200</a></strong></p>
-                <p>For Bulk Passes contact : <strong>Priyanshu Shrivastava : <a href="https://wa.me/+919935062012" target='_blank'>+91 99350 62012</a></strong> </p>
+                <div className='contact-item'>
+                <p><strong>For accomodation contact our Hospitality Team </strong>:Mohd Kaif : <a href="https://wa.me/+918449194200" target="_blank">+91 84491 94200</a></p>
+                </div>
             </div>
 
 
