@@ -30,7 +30,7 @@ const ContactUs = () => {
           <a href="mailto:technovate@iiitnr.edu.in">
             <p className="mail-contact-us">
               <MailOutlineIcon />
-              &nbsp;technovate@iiitnr.edu.in
+              &nbsp;technovate@iiitnr.ac.in
             </p>
           </a>
           <br />
