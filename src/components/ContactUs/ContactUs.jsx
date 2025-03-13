@@ -17,9 +17,9 @@ const ContactUs = () => {
         <a href="https://www.linkedin.com/company/technovate_iiitnr/posts/?feedView=all" target="_main">
           <LinkedInIcon fontSize="large" style={{ color: 'rgb(187, 0, 255)' }} />
         </a>
-        <a href="https://facebook.com" target="_main">
+        {/* <a href="https://facebook.com" target="_main">
           <FacebookIcon fontSize="large" style={{ color: 'rgb(187, 0, 255)' }} />
-        </a>
+        </a> */}
         <a href="https://x.com/technovateiiit" target="_main">
           <XIcon fontSize="large" style={{ color: 'rgb(187, 0, 255)' }} />
         </a>
