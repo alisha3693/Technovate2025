@@ -17,7 +17,7 @@ export default function HeroSection() {
 
   const handleOpen = () => {
     setModalOpen(true);
-    toast.info("Early bird offer will be reopened soon.", {
+    toast.info("Executive early bird offer will be reopened soon.", {
       position: "top-center",
       autoClose: 10000,
       hideProgressBar: false,
