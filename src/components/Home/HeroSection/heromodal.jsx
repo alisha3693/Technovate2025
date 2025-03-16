@@ -85,7 +85,7 @@ export default function HeroModal({ setModalOpen }) {
                             </svg>
 
                             <p>EXECUTIVE PASS</p>
-                            <p><s>₹1200</s> <strong>₹1000</strong></p>
+                            <p><strong>₹1000</strong></p>
                         </div>
                         <div className='modal-card' style={{ backgroundColor: "rgba(211,215,211,0.8)" }} onClick={() => handleRedirect('https://rzp.io/rzp/delpass')}>
 
@@ -103,7 +103,13 @@ export default function HeroModal({ setModalOpen }) {
                             </svg>
 
                             <p>DELEGATE PASS</p>
-                            <p><s>₹1000</s> <strong>₹800</strong></p>
+                            <p style={{
+                                fontSize: '12px',
+                                margin: '-5px 0 5px 0',
+                                color: '#006400',
+                                fontWeight: 'bold'
+                            }}>EARLY BIRD</p>
+                            <p><strong>₹800</strong></p>
                         </div>
                     </div>
                     <div className='modal-info'>
