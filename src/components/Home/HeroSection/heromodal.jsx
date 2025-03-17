@@ -19,8 +19,16 @@ export default function HeroModal({ setModalOpen }) {
                 pauseOnHover: true,
                 draggable: true,
             });
-        } else {
-            window.open(link, '__blank')
+        } else if (link === 'https://rzp.io/rzp/delpass') {
+            toast.info("Early bird offer for delegate passes is closed and will be reopened soon.", {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+            });
+            // window.open(link, '__blank')
         }
     }
 
@@ -85,9 +93,30 @@ export default function HeroModal({ setModalOpen }) {
                             </svg>
 
                             <p>EXECUTIVE PASS</p>
-                            <p><strong>₹1000</strong></p>
+                            <p><strong>₹XXXX</strong></p>
                         </div>
-                        <div className='modal-card' style={{ backgroundColor: "rgba(211,215,211,0.8)" }} onClick={() => handleRedirect('https://rzp.io/rzp/delpass')}>
+                        <div className='modal-card' style={{ backgroundColor: "rgba(211,215,211,0.8)" ,position: "relative",
+                            cursor: "default" } } onClick={() => handleRedirect('https://rzp.io/rzp/delpass')}>
+                            <div style={{
+                                position: "absolute",
+                                top: 0,
+                                left: 0,
+                                width: "100%",
+                                height: "100%",
+                                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                borderRadius: "inherit",
+                                zIndex: 2
+                            }}>
+                                <p style={{
+                                    color: "white",
+                                    textAlign: "center",
+                                    padding: "10px",
+                                    fontWeight: "bold"
+                                }}>EARLY BIRD OFFER CLOSED</p>
+                            </div>
 
                             <svg height="200px" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 351.92 351.92" xml:space="preserve"
@@ -103,13 +132,13 @@ export default function HeroModal({ setModalOpen }) {
                             </svg>
 
                             <p>DELEGATE PASS</p>
-                            <p style={{
+                            {/* <p style={{
                                 fontSize: '12px',
                                 margin: '-5px 0 5px 0',
                                 color: '#006400',
                                 fontWeight: 'bold'
-                            }}>EARLY BIRD</p>
-                            <p><strong>₹800</strong></p>
+                            }}>EARLY BIRD</p> */}
+                            <p><strong>₹1000</strong></p>
                         </div>
                     </div>
                     <div className='modal-info'>
