@@ -11,7 +11,7 @@ export default function HeroModal({ setModalOpen }) {
     const handleRedirect = (link) => {
         if (link === 'https://rzp.io/rzp/execpass') {
             // Display toast message instead of redirecting
-            toast.error(" Under Maintainance", {
+            toast.error("SOLD OUT", {
                 position: "top-center",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -20,14 +20,14 @@ export default function HeroModal({ setModalOpen }) {
                 draggable: true,
             });
         } else if (link === 'https://rzp.io/rzp/delpass') {
-            toast.error("Under Maintainance", {
-                position: "top-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-            });
+            // toast.error("Will be Opended Soon", {
+            //     position: "top-center",
+            //     autoClose: 5000,
+            //     hideProgressBar: false,
+            //     closeOnClick: true,
+            //     pauseOnHover: true,
+            //     draggable: true,
+            // });
         }
             // window.open(link, '__blank')
         
@@ -53,7 +53,13 @@ export default function HeroModal({ setModalOpen }) {
                             <div className='contact-item'>
                                 <p>Debashish Padhy: <a href="https://wa.me/+918374344812" target='_blank'>+91 83743 44812</a></p>
                             </div>
+
                         </div>
+                        <p style={{
+                                fontStyle: 'italic',
+                                color: 'rgba(248, 6, 6, 0.8)',
+                                fontWeight: 'bold'
+                            }}>*ISSUE WILL BE RESOLVED SOON , BOOKINGS VIA PHONE OPEN</p>
                     </div>
                     <hr />
                     <div className='modal-card-div'>
@@ -79,7 +85,7 @@ export default function HeroModal({ setModalOpen }) {
                                     textAlign: "center",
                                     padding: "10px",
                                     fontWeight: "bold"
-                                }}>EARLY BIRD OFFER CLOSED</p>
+                                }}>SOLD OUT!</p>
                             </div>
                             <svg fill="#333" height="200px" width="200px" version="1.1" id="Capa_1"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -93,7 +99,7 @@ export default function HeroModal({ setModalOpen }) {
                             </svg>
 
                             <p>EXECUTIVE PASS</p>
-                            <p><strong>₹2500</strong></p>
+                            <p><strong>₹XXXX</strong></p>
                         </div>
                         <div className='modal-card' style={{ backgroundColor: "rgba(211,215,211,0.8)"  , position:"relative"} } onClick={() => handleRedirect('https://rzp.io/rzp/delpass')}>
                             <div style={{
@@ -114,7 +120,7 @@ export default function HeroModal({ setModalOpen }) {
                                     textAlign: "center",
                                     padding: "10px",
                                     fontWeight: "bold"
-                                }}>EARLY BIRD OFFER CLOSED</p>
+                                }}>UNDER MAINTAINANCE</p>
                             </div>
 
                             <svg height="200px" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
