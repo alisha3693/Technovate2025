@@ -9,26 +9,27 @@ export default function HeroModal({ setModalOpen }) {
     }
 
     const handleRedirect = (link) => {
-        // if (link === 'https://rzp.io/rzp/execpass') {
-        //     // Display toast message instead of redirecting
-        //     toast.info("Early bird offer for executive passes is closed and will be reopened soon.", {
-        //         position: "top-center",
-        //         autoClose: 5000,
-        //         hideProgressBar: false,
-        //         closeOnClick: true,
-        //         pauseOnHover: true,
-        //         draggable: true,
-        //     });
-        // } else if (link === 'https://rzp.io/rzp/delpass') {
-        //     toast.info("Early bird offer for delegate passes is closed and will be reopened soon.", {
-        //         position: "top-center",
-        //         autoClose: 5000,
-        //         hideProgressBar: false,
-        //         closeOnClick: true,
-        //         pauseOnHover: true,
-        //         draggable: true,
-        //     });
-            window.open(link, '__blank')
+        if (link === 'https://rzp.io/rzp/execpass') {
+            // Display toast message instead of redirecting
+            toast.error(" Under Maintainance", {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+            });
+        } else if (link === 'https://rzp.io/rzp/delpass') {
+            toast.error("Under Maintainance", {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+            });
+        }
+            // window.open(link, '__blank')
         
     }
 
@@ -57,10 +58,10 @@ export default function HeroModal({ setModalOpen }) {
                     <hr />
                     <div className='modal-card-div'>
                         <div className='modal-card' style={{
-                            backgroundColor: "rgba(252, 229, 102, 0.8)"
-                            
+                            backgroundColor: "rgba(252, 229, 102, 0.8)",
+                            position:"relative"
                         }} onClick={()=> handleRedirect('https://rzp.io/rzp/execpass')}>
-                            {/* <div style={{
+                            <div style={{
                                 position: "absolute",
                                 top: 0,
                                 left: 0,
@@ -79,7 +80,7 @@ export default function HeroModal({ setModalOpen }) {
                                     padding: "10px",
                                     fontWeight: "bold"
                                 }}>EARLY BIRD OFFER CLOSED</p>
-                            </div> */}
+                            </div>
                             <svg fill="#333" height="200px" width="200px" version="1.1" id="Capa_1"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 viewBox="0 0 220 220" xml:space="preserve" opacity="0.9">
@@ -94,8 +95,8 @@ export default function HeroModal({ setModalOpen }) {
                             <p>EXECUTIVE PASS</p>
                             <p><strong>₹2500</strong></p>
                         </div>
-                        <div className='modal-card' style={{ backgroundColor: "rgba(211,215,211,0.8)"  } } onClick={() => handleRedirect('https://rzp.io/rzp/delpass')}>
-                            {/* <div style={{
+                        <div className='modal-card' style={{ backgroundColor: "rgba(211,215,211,0.8)"  , position:"relative"} } onClick={() => handleRedirect('https://rzp.io/rzp/delpass')}>
+                            <div style={{
                                 position: "absolute",
                                 top: 0,
                                 left: 0,
@@ -114,7 +115,7 @@ export default function HeroModal({ setModalOpen }) {
                                     padding: "10px",
                                     fontWeight: "bold"
                                 }}>EARLY BIRD OFFER CLOSED</p>
-                            </div> */}
+                            </div>
 
                             <svg height="200px" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 351.92 351.92" xml:space="preserve"
