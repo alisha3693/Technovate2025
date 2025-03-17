@@ -49,12 +49,12 @@ export default function Home() {
           width: `${scrollProgress}%`,
         }}
       />
-      
+
       {/* Your other sections */}
       <HeroSection />
       <VideoSection />
       <AboutSection />
-      {/* <Events/> */}
+      <Events />
       {/* <EventText/> */}
       <Gallery />
       <Glimpse />

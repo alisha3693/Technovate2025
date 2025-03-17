@@ -1,125 +1,197 @@
 /* Modal Overlay */
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Transparent black */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Transparent black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  backdrop-filter: blur(8px);
 }
 
 .main-modal {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 /* Modal Content */
 .modal-overlay > .modal-content {
-    margin-top: 120px;
-    width: 80%;
-    height: 80%;
+  margin-top: 120px;
+  width: 80%;
+  height: 80%;
 }
 
 .modal-content-nav {
-    display: flex;
-    height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgba(100, 100, 255, 0.3);
+  height: 20%;
 }
 
 .modal-content-boxes {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(120px, 1fr)); /* Adjust columns */
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    /* Add scroll behavior */
-    max-height: 80%;  /* Ensure it doesn't exceed modal height */
-    overflow-y: auto; /* Enable vertical scrolling */
-    padding-right: 10px; /* Avoid content touching the scrollbar */
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); /* Adjust columns */
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  /* Add scroll behavior */
+  max-height: 80%; /* Ensure it doesn't exceed modal height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-right: 10px; /* Avoid content touching the scrollbar */
+  padding: 10px 0;
 }
 
 .modal-content-nav > h1 {
-    margin: none;
+  font-family: "technovate", sans-serif;
+  color: #fff;
+  font-size: 2rem;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(100, 100, 255, 0.7);
+  letter-spacing: 1px;
 }
 
 .modal-content-nav > button {
-    display: flex;
-    margin-left: auto;
-    width: 5%;
-    height: 15%;
-    justify-content: center;
-    align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modal-content-nav > button:hover {
+  background: rgba(255, 0, 0, 0.3);
+  transform: scale(1.1);
 }
 
 .modal-content-nav > img {
-    width: 50%;
-    height: 100%;
+  width: 50%;
+  height: 100%;
 }
 
 .modal-content {
-    background-color: rgba(141, 33, 49, 0.81);
-    padding: 20px;
-    border-radius: 5px;
-    width: 60%;
-    height: 60%;
-    text-align: justify;
-    color: white;
-    transition: width 0.3s ease, height 0.3s ease;
+  background-color: rgba(20, 20, 40, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 1200px;
+  max-height: 90vh;
+  text-align: justify;
+  color: white;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(100, 100, 255, 0.3);
+  border: 1px solid rgba(100, 100, 255, 0.2);
+  animation: modalFadeIn 0.3s ease-out;
+  transition: width 0.3s ease, height 0.3s ease;
 }
 
 /* Button Styles */
 button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
+}
+
+.category-description {
+  background: rgba(100, 100, 255, 0.1);
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid rgba(100, 100, 255, 0.5);
+  font-style: italic;
+  line-height: 1.5;
 }
 
 /* Responsive styles */
 @media only screen and (max-width: 768px) {
-    .modal-content {
-        width: 80%;
-        height: 80%;
-    }
+  .modal-content {
+    width: 80%;
+    height: 80%;
+  }
 
-    .modal-content-nav {
-        height: 15%;
-    }
+  .modal-content-nav {
+    height: 15%;
+  }
 
-    .modal-content-nav > button {
-        width: 30px;
-        height: 30px;
-    }
+  .modal-content-nav > button {
+    width: 30px;
+    height: 30px;
+  }
 
-    .modal-content-boxes {
-        grid-template-columns: repeat(2, minmax(120px, 1fr));
-    }
+  .modal-content-boxes {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+  }
 }
 
 @media only screen and (max-width: 480px) {
-    .modal-content {
-        width: 90%;
-        height: 90%;
-    }
+  .modal-content {
+    width: 90%;
+    height: 90%;
+  }
 
-    .modal-content-nav {
-        height: 10%;
-    }
+  .modal-content-nav {
+    height: 10%;
+  }
 
-    .modal-content-nav > button {
-        width: 25px;
-        height: 25px;
-    }
+  .modal-content-nav > button {
+    width: 25px;
+    height: 25px;
+  }
 
-    .modal-content-boxes {
-        grid-template-columns: 1fr;
-    }
+  .modal-content-boxes {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Additional scrollbar styling */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: rgba(100, 100, 255, 0.4);
+  border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 100, 255, 0.6);
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

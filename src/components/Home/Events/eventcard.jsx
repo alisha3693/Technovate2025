@@ -2,7 +2,7 @@ import React from "react"
 import './eventcard.css'
 
 
-export default function EventCard({image_link , title_text , onClick}){
+export default function EventCard({ image_link, title_text, onClick }) {
 
     return (
         <div className="main-div" onClick={onClick}>
