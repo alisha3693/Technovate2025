@@ -17,14 +17,14 @@ export default function HeroSection() {
 
   const handleOpen = () => {
     setModalOpen(true);
-    toast.info("Late bird executive offer will be reopened soon.", {
-      position: "top-center",
-      autoClose: 10000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-    });
+    // toast.info("Late bird executive offer will be reopened soon.", {
+    //   position: "top-center",
+    //   autoClose: 10000,
+    //   hideProgressBar: false,
+    //   closeOnClick: true,
+    //   pauseOnHover: true,
+    //   draggable: true,
+    // });
   }
 
   useEffect(() => {
