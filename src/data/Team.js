@@ -62,6 +62,8 @@ import vanshgoel from "../assets/Team/Logistics/VanshGoel.jpg";
 import AlishaTripathi from "../assets/Team/Website/AlishaTripathi.jpg";
 import MohitSharma from "../assets/Team/Website/MohitSharma.jpeg";
 import Manas from "../assets/Team/Website/ManasChoudhary.png";
+import Shreyash from "../assets/Team/Website/ShreyashRai.jpg";
+
 //sports
 import AnanyaRajawat from "../assets/Team/Sports/Ananya.jpg";
 import Yash_Raj from "../assets/Team/Sports/Yash_Raj.jpeg";
@@ -364,9 +366,6 @@ const teamData = [
     ],
     members: [
       {
-        name: "Shreyash Rai",
-      },
-      {
         name: "Arpita Dash",
       },
       {
@@ -388,16 +387,15 @@ const teamData = [
         name: "Tarun Bhagat",
       },
       {
-        name : "Anushka Anil"
-
+        name: "Anushka Anil",
       },
     ],
     seniormembers: [
       { name: "Aanchal Rajawat", image: AanchalRajawat },
       { name: "Uttam", image: Uttam },
       { name: "Ashrita ", image: Ashrita },
-      { name: "Parth Patel" , image:parth},
-      { name: "Hritik Routia" , image:hritik},
+      { name: "Parth Patel", image: parth },
+      { name: "Hritik Routia", image: hritik },
     ],
   },
 
@@ -421,6 +419,10 @@ const teamData = [
       {
         name: "Manas Choudhary",
         image: Manas,
+      },
+      {
+        name: "Shreyash Rai",
+        image: Shreyash,
       },
     ],
   },
@@ -491,7 +493,7 @@ const teamData = [
       },
       {
         name: "Himanshu",
-      }
+      },
     ],
     seniormembers: [],
   },
