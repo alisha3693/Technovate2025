@@ -27,7 +27,8 @@ export default function HeroModal({ setModalOpen }) {
             //     closeOnClick: true,
             //     pauseOnHover: true,
             //     draggable: true,
-            // });
+            // });\
+             window.open(link, '__blank')
         }
             // window.open(link, '__blank')
         
@@ -55,11 +56,11 @@ export default function HeroModal({ setModalOpen }) {
                             </div>
 
                         </div>
-                        <p style={{
+                        {/* <p style={{
                                 fontStyle: 'italic',
                                 color: 'rgba(248, 6, 6, 0.8)',
                                 fontWeight: 'bold'
-                            }}>*ISSUE WILL BE RESOLVED SOON , BOOKINGS VIA PHONE OPEN</p>
+                            }}>*ISSUE WILL BE RESOLVED SOON , BOOKINGS VIA PHONE OPEN</p> */}
                     </div>
                     <hr />
                     <div className='modal-card-div'>
@@ -102,7 +103,7 @@ export default function HeroModal({ setModalOpen }) {
                             <p><strong>₹XXXX</strong></p>
                         </div>
                         <div className='modal-card' style={{ backgroundColor: "rgba(211,215,211,0.8)"  , position:"relative"} } onClick={() => handleRedirect('https://rzp.io/rzp/delpass')}>
-                            <div style={{
+                            {/* <div style={{
                                 position: "absolute",
                                 top: 0,
                                 left: 0,
@@ -121,7 +122,7 @@ export default function HeroModal({ setModalOpen }) {
                                     padding: "10px",
                                     fontWeight: "bold"
                                 }}>UNDER MAINTAINANCE</p>
-                            </div>
+                            </div> */}
 
                             <svg height="200px" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 351.92 351.92" xml:space="preserve"
