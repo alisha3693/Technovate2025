@@ -28,10 +28,10 @@ export default function HeroModal({ setModalOpen }) {
             //     pauseOnHover: true,
             //     draggable: true,
             // });\
-             window.open(link, '__blank')
+            window.open(link, '__blank')
         }
-            // window.open(link, '__blank')
-        
+        // window.open(link, '__blank')
+
     }
 
     return (
@@ -64,7 +64,7 @@ export default function HeroModal({ setModalOpen }) {
                     </div>
                     <hr />
                     <div className='modal-card-div'>
-                        <div className='modal-card' style={{
+                        {/* <div className='modal-card' style={{
                             backgroundColor: "rgba(252, 229, 102, 0.8)",
                             position:"relative"
                         }} onClick={()=> handleRedirect('https://rzp.io/rzp/execpass')}>
@@ -101,8 +101,8 @@ export default function HeroModal({ setModalOpen }) {
 
                             <p>EXECUTIVE PASS</p>
                             <p><strong>₹XXXX</strong></p>
-                        </div>
-                        <div className='modal-card' style={{ backgroundColor: "rgba(211,215,211,0.8)"  , position:"relative"} } onClick={() => handleRedirect('https://rzp.io/rzp/delpass')}>
+                        </div> */}
+                        <div className='modal-card' style={{ backgroundColor: "rgba(211,215,211,0.8)", position: "relative" }} onClick={() => handleRedirect('https://rzp.io/rzp/delpass')}>
                             {/* <div style={{
                                 position: "absolute",
                                 top: 0,
