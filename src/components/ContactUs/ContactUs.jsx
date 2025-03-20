@@ -1,10 +1,9 @@
-import React from 'react';
-import './ContactUs.css';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import XIcon from '@mui/icons-material/X';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import XIcon from '@mui/icons-material/X';
+import React from 'react';
+import './ContactUs.css';
 
 const ContactUs = () => {
   return (
@@ -44,7 +43,9 @@ const ContactUs = () => {
           <a href="/team">
             <p className="quick-links">Team</p>
           </a>
-          <a href="/schedule">
+          <a href="https://docs.google.com/spreadsheets/d/1Qkkf4Hq1c2MuU-Fxsrd89GcqHD5-EXFPwWEkJm9FP5k" 
+          target="_blank" 
+          rel="noopener noreferrer">
             <p className="quick-links">Schedule</p>
           </a>
         </div>
