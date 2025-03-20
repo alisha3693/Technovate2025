@@ -56,7 +56,7 @@ export default function NavBar() {
   };
 
   const handleScheduleClick = () => {
-    window.open('https://docs.google.com/spreadsheets/d/1Qkkf4Hq1c2MuU-Fxsrd89GcqHD5-EXFPwWEkJm9FP5k', '_blank');
+    navigate('/schedule');
     handleMenuClose();
   };  
 

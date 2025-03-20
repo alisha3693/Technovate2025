@@ -43,9 +43,7 @@ const ContactUs = () => {
           <a href="/team">
             <p className="quick-links">Team</p>
           </a>
-          <a href="https://docs.google.com/spreadsheets/d/1Qkkf4Hq1c2MuU-Fxsrd89GcqHD5-EXFPwWEkJm9FP5k" 
-          target="_blank" 
-          rel="noopener noreferrer">
+          <a href="/schedule">
             <p className="quick-links">Schedule</p>
           </a>
         </div>
