@@ -16,10 +16,9 @@ export default function HeroSection() {
   const navigate = useNavigate();
 
   const handleOpen = () => {
-    setModalOpen(true);
-    toast.info("Physical pass is also available for ₹1000", {
+    toast.error("Pass registration is now closed!", {
       position: "top-center",
-      autoClose: 10000,
+      autoClose: 5000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -78,7 +77,17 @@ export default function HeroSection() {
         <div className="hero-section-text">
           <div>TECHNOVATE 6.0</div>
           <span className="coming-soon-text">MARCH 21-23</span>
-          <button onClick={handleOpen}>Get your passes now</button>
+          <button
+            onClick={handleOpen}
+            style={{
+              opacity: 0.7,
+              cursor: "not-allowed",
+              backgroundColor: "#666",
+              color: "#ccc"
+            }}
+          >
+            Get your passes now
+          </button>
         </div>
         <div className="hero-section-svg">
           <svg
