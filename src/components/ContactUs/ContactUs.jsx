@@ -1,10 +1,9 @@
-import React from 'react';
-import './ContactUs.css';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import XIcon from '@mui/icons-material/X';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import XIcon from '@mui/icons-material/X';
+import React from 'react';
+import './ContactUs.css';
 
 const ContactUs = () => {
   return (
