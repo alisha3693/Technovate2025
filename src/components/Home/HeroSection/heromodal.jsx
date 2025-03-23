@@ -20,18 +20,15 @@ export default function HeroModal({ setModalOpen }) {
                 draggable: true,
             });
         } else if (link === 'https://rzp.io/rzp/delpass') {
-            // toast.error("Will be Opended Soon", {
-            //     position: "top-center",
-            //     autoClose: 5000,
-            //     hideProgressBar: false,
-            //     closeOnClick: true,
-            //     pauseOnHover: true,
-            //     draggable: true,
-            // });\
-            window.open(link, '__blank')
+            toast.error("SOLD OUT", {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+            });
         }
-        // window.open(link, '__blank')
-
     }
 
     return (
@@ -56,18 +53,10 @@ export default function HeroModal({ setModalOpen }) {
                             </div>
 
                         </div>
-                        {/* <p style={{
-                                fontStyle: 'italic',
-                                color: 'rgba(248, 6, 6, 0.8)',
-                                fontWeight: 'bold'
-                            }}>*ISSUE WILL BE RESOLVED SOON , BOOKINGS VIA PHONE OPEN</p> */}
                     </div>
                     <hr />
                     <div className='modal-card-div'>
-                        {/* <div className='modal-card' style={{
-                            backgroundColor: "rgba(252, 229, 102, 0.8)",
-                            position:"relative"
-                        }} onClick={()=> handleRedirect('https://rzp.io/rzp/execpass')}>
+                        <div className='modal-card' style={{ backgroundColor: "rgba(211,215,211,0.8)", position: "relative", cursor: "default" }}>
                             <div style={{
                                 position: "absolute",
                                 top: 0,
@@ -86,43 +75,8 @@ export default function HeroModal({ setModalOpen }) {
                                     textAlign: "center",
                                     padding: "10px",
                                     fontWeight: "bold"
-                                }}>SOLD OUT!</p>
+                                }}>SOLD OUT</p>
                             </div>
-                            <svg fill="#333" height="200px" width="200px" version="1.1" id="Capa_1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                viewBox="0 0 220 220" xml:space="preserve" opacity="0.9">
-                                <g id="SVGRepo_iconCarrier">
-                                    <path d="M220,98.865c0-12.728-10.355-23.083-23.083-23.083s-23.083,10.355-23.083,23.083c0,5.79,2.148,11.084,5.681,15.14 
-                                l-23.862,21.89L125.22,73.002l17.787-20.892l-32.882-38.623L77.244,52.111l16.995,19.962l-30.216,63.464l-23.527-21.544 
-                                c3.528-4.055,5.671-9.344,5.671-15.128c0-12.728-10.355-23.083-23.083-23.083C10.355,75.782,0,86.137,0,98.865 
-                                c0,11.794,8.895,21.545,20.328,22.913l7.073,84.735H192.6l7.073-84.735C211.105,120.41,220,110.659,220,98.865z"/>
-                                </g>
-                            </svg>
-
-                            <p>EXECUTIVE PASS</p>
-                            <p><strong>₹XXXX</strong></p>
-                        </div> */}
-                        <div className='modal-card' style={{ backgroundColor: "rgba(211,215,211,0.8)", position: "relative" }} onClick={() => handleRedirect('https://rzp.io/rzp/delpass')}>
-                            {/* <div style={{
-                                position: "absolute",
-                                top: 0,
-                                left: 0,
-                                width: "100%",
-                                height: "100%",
-                                backgroundColor: "rgba(0, 0, 0, 0.5)",
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                borderRadius: "inherit",
-                                zIndex: 2
-                            }}>
-                                <p style={{
-                                    color: "white",
-                                    textAlign: "center",
-                                    padding: "10px",
-                                    fontWeight: "bold"
-                                }}>UNDER MAINTAINANCE</p>
-                            </div> */}
 
                             <svg height="200px" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 351.92 351.92" xml:space="preserve"
@@ -138,12 +92,6 @@ export default function HeroModal({ setModalOpen }) {
                             </svg>
 
                             <p>DELEGATE PASS</p>
-                            {/* <p style={{
-                                fontSize: '12px',
-                                margin: '-5px 0 5px 0',
-                                color: '#006400',
-                                fontWeight: 'bold'
-                            }}>EARLY BIRD</p> */}
                             <p><strong>₹1000</strong></p>
                         </div>
                     </div>
